@@ -1,21 +1,36 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  const handleNavigation = (href: string) => {
+    if (href.startsWith("#")) {
+      // Handle hash navigation for homepage sections
+      navigate("/");
+      setTimeout(() => {
+        const element = document.querySelector(href);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      // Handle page navigation
+      navigate(href);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
   };
 
   const menuItems = [
-    { name: "Início", href: "#home" },
-    { name: "Sobre Nós", href: "#sobre" },
-    { name: "Soluções", href: "#solucoes" },
-    { name: "Método Impulsionar", href: "#metodo" },
-    { name: "Parceiros", href: "#parceiros" },
-    { name: "Contato", href: "#contato" },
+    { name: "Início", href: "/" },
+    { name: "Sobre Nós", href: "/sobre-nos" },
+    { name: "Soluções", href: "/solucoes" },
+    { name: "Método Impulsionar", href: "/metodo-impulsionar" },
+    { name: "Parceiros", href: "/parceiros" },
+    { name: "Contato", href: "/contato" },
   ];
 
   return (
@@ -36,14 +51,13 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
             {menuItems.map((item) => (
-              <a
+              <button
                 key={item.name}
-                href={item.href}
-                onClick={scrollToTop}
+                onClick={() => handleNavigation(item.href)}
                 className="text-foreground hover:text-primary transition-colors duration-300 font-medium"
               >
                 {item.name}
-              </a>
+              </button>
             ))}
           </nav>
 
@@ -51,7 +65,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               className="btn-hero-secondary"
-              onClick={scrollToTop}
+              onClick={() => handleNavigation("/contato")}
             >
               Fale Conosco
             </Button>
@@ -71,23 +85,22 @@ const Header = () => {
           <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
             <div className="flex flex-col space-y-3">
               {menuItems.map((item) => (
-                <a
+                <button
                   key={item.name}
-                  href={item.href}
                   onClick={() => {
                     setIsMenuOpen(false);
-                    scrollToTop();
+                    handleNavigation(item.href);
                   }}
-                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium py-2"
+                  className="text-foreground hover:text-primary transition-colors duration-300 font-medium py-2 text-left"
                 >
                   {item.name}
-                </a>
+                </button>
               ))}
               <Button 
                 className="btn-hero-secondary mt-4"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  scrollToTop();
+                  handleNavigation("/contato");
                 }}
               >
                 Fale Conosco
