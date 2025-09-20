@@ -13,20 +13,20 @@ interface ServiceCardProps {
 
 const ServiceCard = ({ title, description, buttonText, delay = 0, onClick }: ServiceCardProps) => {
   return (
-    <ScrollAnimation delay={delay} className="h-full">
-      <Card className="h-full card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+    <ScrollAnimation delay={delay}>
+      <Card className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
         <CardHeader className="pb-3">
           <CardTitle className="text-xl font-semibold text-foreground mb-2 leading-tight">
             {title}
           </CardTitle>
         </CardHeader>
-        <CardContent className="pt-0 flex flex-col justify-between h-full">
+        <CardContent className="pt-0">
           <CardDescription className="text-muted-foreground mb-4 leading-relaxed">
             {description}
           </CardDescription>
           <Button 
             variant="outline" 
-            className="w-full group border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 mt-auto"
+            className="w-full group border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             onClick={onClick}
           >
             {buttonText}
