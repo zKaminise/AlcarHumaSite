@@ -68,7 +68,7 @@ const About = () => {
             <ScrollAnimation animationType="slide-in-right" delay={200}>
               <div className="relative">
                 {/* Main image */}
-                <div className="relative z-10 rounded-3xl overflow-hidden shadow-lg">
+                <div className="relative z-10 rounded-3xl overflow-hidden shadow-lg bg-white">
                   <img
                     src={integrationImage}
                     alt="Integração de processos e pessoas"
@@ -77,17 +77,13 @@ const About = () => {
                 </div>
                 
                 {/* Founder image overlay */}
-                <div className="absolute -bottom-6 -right-6 w-48 h-48 rounded-2xl overflow-hidden shadow-lg border-4 border-background">
+                <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl overflow-hidden shadow-lg border-4 border-background bg-white">
                   <img
                     src={founderImage}
                     alt="Marianna S. P. Aquino - Fundadora"
                     className="w-full h-full object-cover"
                   />
                 </div>
-                
-                {/* Decorative elements */}
-                <div className="absolute -top-4 -left-4 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-80" />
-                <div className="absolute top-1/2 -right-8 w-8 h-8 bg-auxiliary rounded-full" />
               </div>
             </ScrollAnimation>
           </div>
