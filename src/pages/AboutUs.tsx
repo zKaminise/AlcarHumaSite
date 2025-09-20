@@ -5,7 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import teamImage from "@/assets/team-collaboration.jpg";
-import valuesImage from "@/assets/values-mission.jpg";
+import missionVisionImage from "@/assets/mission-vision-hero.jpg";
 
 const AboutUs = () => {
   const values = [
@@ -61,75 +61,98 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Mission, Vision, Values Section */}
+      {/* Mission, Vision, Purpose Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
+          {/* Section Header */}
+          <div className="text-center mb-16">
+            <ScrollAnimation animationType="fade-in-up">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+                O que nos <span className="text-gradient">Define</span>
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Nossos pilares fundamentais que orientam cada decisão e projeto
+              </p>
+            </ScrollAnimation>
+          </div>
+
           <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Image */}
+            <ScrollAnimation animationType="slide-in-left">
+              <div className="relative">
+                <div className="relative rounded-3xl overflow-hidden shadow-lg bg-white">
+                  <img
+                    src={missionVisionImage}
+                    alt="Propósito, Missão e Visão da Alçar Humà"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+                <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-90 flex items-center justify-center">
+                  <Target className="h-10 w-10 text-primary-foreground" />
+                </div>
+              </div>
+            </ScrollAnimation>
+
             {/* Content */}
-            <div className="space-y-12">
+            <div className="space-y-8">
               {/* Propósito */}
               <ScrollAnimation animationType="fade-in-up">
-                <div className="p-8 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl border border-primary/10">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center">
-                      <Target className="h-5 w-5 text-primary-foreground" />
+                <div className="relative">
+                  <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-primary to-secondary rounded-full"></div>
+                  <div className="pl-8">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center">
+                        <Target className="h-6 w-6 text-primary-foreground" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground">Propósito</h3>
                     </div>
-                    <h2 className="text-2xl font-bold text-foreground">Propósito</h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Descomplicar a gestão e potencializar pessoas, transformando desafios em 
+                      oportunidades de crescimento sustentável.
+                    </p>
                   </div>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Descomplicar a gestão e potencializar pessoas, transformando desafios em 
-                    oportunidades de crescimento sustentável.
-                  </p>
                 </div>
               </ScrollAnimation>
 
               {/* Missão */}
               <ScrollAnimation animationType="fade-in-up" delay={100}>
-                <div className="p-8 bg-gradient-to-br from-auxiliary/10 to-primary/5 rounded-3xl border border-auxiliary/20">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-br from-auxiliary to-primary rounded-xl flex items-center justify-center">
-                      <Target className="h-5 w-5 text-auxiliary-foreground" />
+                <div className="relative">
+                  <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-auxiliary to-primary rounded-full"></div>
+                  <div className="pl-8">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-auxiliary to-primary rounded-xl flex items-center justify-center">
+                        <Target className="h-6 w-6 text-auxiliary-foreground" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground">Missão</h3>
                     </div>
-                    <h2 className="text-2xl font-bold text-foreground">Missão</h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Oferecer soluções integradas de gestão, governança e desenvolvimento humano, 
+                      guiando empreendedores e líderes na construção de negócios prósperos, éticos e humanizados.
+                    </p>
                   </div>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Oferecer soluções integradas de gestão, governança e desenvolvimento humano, 
-                    guiando empreendedores e líderes na construção de negócios prósperos, éticos e humanizados.
-                  </p>
                 </div>
               </ScrollAnimation>
 
               {/* Visão */}
               <ScrollAnimation animationType="fade-in-up" delay={200}>
-                <div className="p-8 bg-gradient-to-br from-secondary/5 to-auxiliary/10 rounded-3xl border border-secondary/10">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-10 h-10 bg-gradient-to-br from-secondary to-auxiliary rounded-xl flex items-center justify-center">
-                      <Eye className="h-5 w-5 text-secondary-foreground" />
+                <div className="relative">
+                  <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-auxiliary rounded-full"></div>
+                  <div className="pl-8">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-auxiliary rounded-xl flex items-center justify-center">
+                        <Eye className="h-6 w-6 text-secondary-foreground" />
+                      </div>
+                      <h3 className="text-2xl font-bold text-foreground">Visão</h3>
                     </div>
-                    <h2 className="text-2xl font-bold text-foreground">Visão</h2>
+                    <p className="text-lg text-muted-foreground leading-relaxed">
+                      Ser referência como parceira estratégica no desenvolvimento e estruturação de 
+                      pequenas e médias empresas, reconhecida por gerar resultados mensuráveis através 
+                      da valorização do capital humano.
+                    </p>
                   </div>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
-                    Ser referência como parceira estratégica no desenvolvimento e estruturação de 
-                    pequenas e médias empresas, reconhecida por gerar resultados mensuráveis através 
-                    da valorização do capital humano.
-                  </p>
                 </div>
               </ScrollAnimation>
             </div>
-
-            {/* Image */}
-            <ScrollAnimation animationType="slide-in-right" delay={100}>
-              <div className="relative">
-                <div className="relative rounded-3xl overflow-hidden shadow-lg bg-white">
-                  <img
-                    src={valuesImage}
-                    alt="Valores e missão da Alçar Humà"
-                    className="w-full h-auto object-cover"
-                  />
-                </div>
-                <div className="absolute -top-6 -right-6 w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-80" />
-              </div>
-            </ScrollAnimation>
           </div>
         </div>
       </section>
