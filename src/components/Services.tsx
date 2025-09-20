@@ -73,18 +73,6 @@ const Services = () => {
             </div>
           ))}
         </div>
-
-        {/* Bottom CTA */}
-        <ScrollAnimation animationType="fade-in-up" delay={600}>
-          <div className="text-center mt-16">
-            <p className="text-muted-foreground mb-6">
-              Não encontrou exatamente o que procura? Vamos conversar sobre suas necessidades específicas.
-            </p>
-            <button className="btn-hero">
-              Fale com um Especialista
-            </button>
-          </div>
-        </ScrollAnimation>
       </div>
     </section>
   );
