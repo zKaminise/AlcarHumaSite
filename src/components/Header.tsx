@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
@@ -6,7 +6,18 @@ import logoAlcar from "@/assets/logo-alcar.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isAtTop, setIsAtTop] = useState(true);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsAtTop(scrollTop < 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const handleNavigation = (href: string) => {
     if (href.startsWith("#")) {
@@ -35,15 +46,15 @@ const Header = () => {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
-      <div className="container mx-auto px-4 py-4">
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300 ${isAtTop ? 'py-2' : 'py-1'}`}>
+      <div className={`container mx-auto px-4 transition-all duration-300 ${isAtTop ? 'py-6' : 'py-3'}`}>
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
               src={logoAlcar} 
               alt="Alçar Humà - Gestão e Pessoas" 
-              className="h-12 w-auto object-contain"
+              className={`w-auto object-contain transition-all duration-300 ${isAtTop ? 'h-16' : 'h-12'}`}
             />
           </div>
 
