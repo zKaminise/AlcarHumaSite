@@ -43,7 +43,7 @@ const Header = () => {
             <img 
               src={logoAlcar} 
               alt="Alçar Humà - Gestão e Pessoas" 
-              className="h-12 w-auto object-contain"
+              className="h-16 w-auto object-contain"
             />
           </div>
 
