@@ -24,7 +24,7 @@ const Services = () => {
     },
     {
       icon: Presentation,
-      title: "Palestras e Workshops",
+      title: "Palestras &\nWorkshops",
       description: "Conhecimento que inspira a ação. Levamos conteúdo relevante e prático para suas equipes e lideranças sobre temas como liderança humanizada, comunicação, cultura e tendências de mercado.",
       buttonText: "Ver Temas de Palestras"
     }

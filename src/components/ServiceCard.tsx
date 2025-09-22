@@ -16,7 +16,7 @@ const ServiceCard = ({ title, description, buttonText, delay = 0, onClick }: Ser
     <ScrollAnimation delay={delay}>
       <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
         <CardHeader className="pb-3">
-          <CardTitle className="text-xl font-semibold text-card-dark-foreground mb-2 leading-tight">
+          <CardTitle className="text-xl font-semibold text-card-dark-foreground mb-2 leading-tight whitespace-pre-line">
             {title}
           </CardTitle>
         </CardHeader>
