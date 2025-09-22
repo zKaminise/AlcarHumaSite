@@ -6,7 +6,7 @@ import ScrollAnimation from "./ScrollAnimation";
 
 const About = () => {
   return (
-    <section id="sobre" className="py-20 bg-muted/30">
+    <section id="sobre" className="py-12 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}

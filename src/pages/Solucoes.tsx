@@ -14,7 +14,7 @@ const Solucoes = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-background via-background to-muted/20">
+      <section className="pt-24 pb-10 px-4 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -29,7 +29,7 @@ const Solucoes = () => {
       </section>
 
       {/* Gestão de Riscos Psicossociais Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-muted/5 to-background">
+      <section className="py-12 px-4 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
@@ -144,7 +144,7 @@ const Solucoes = () => {
       </section>
 
       {/* GRC Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section className="py-12 px-4 bg-gradient-to-br from-background to-muted/20">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">

@@ -41,7 +41,7 @@ const AboutUs = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-background via-muted/20 to-auxiliary/10">
+      <section className="pt-24 pb-12 bg-gradient-to-br from-background via-muted/20 to-auxiliary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation animationType="fade-in-up">
@@ -62,7 +62,7 @@ const AboutUs = () => {
       </section>
 
       {/* Mission, Vision, Purpose Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           {/* Section Header */}
           <div className="text-center mb-16">
@@ -158,7 +158,7 @@ const AboutUs = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <ScrollAnimation animationType="fade-in-up">
@@ -193,7 +193,7 @@ const AboutUs = () => {
       </section>
 
       {/* Ecosystem Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             {/* Image */}

@@ -42,7 +42,7 @@ const Parceiros = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-background via-background to-muted/20">
+      <section className="pt-24 pb-10 px-4 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
@@ -57,7 +57,7 @@ const Parceiros = () => {
       </section>
 
       {/* Texto Introdutório */}
-      <section className="py-16 px-4 bg-gradient-to-br from-muted/5 to-background">
+      <section className="py-10 px-4 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-4xl mx-auto">
           <ScrollAnimation>
             <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 max-w-4xl mx-auto">
@@ -81,7 +81,7 @@ const Parceiros = () => {
       </section>
 
       {/* Galeria de Especialistas */}
-      <section className="py-20 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section className="py-12 px-4 bg-gradient-to-br from-background to-muted/20">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
@@ -154,7 +154,7 @@ const Parceiros = () => {
       </section>
 
       {/* Como Funciona Nossa Parceria */}
-      <section className="py-20 px-4 bg-gradient-to-br from-muted/5 to-background">
+      <section className="py-12 px-4 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-12">

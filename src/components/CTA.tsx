@@ -4,7 +4,7 @@ import ScrollAnimation from "./ScrollAnimation";
 
 const CTA = () => {
   return (
-    <section id="contato" className="py-20 bg-gradient-to-br from-primary to-secondary relative overflow-hidden">
+    <section id="contato" className="py-12 bg-gradient-to-br from-primary to-secondary relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-secondary opacity-90" />
       <div className="absolute top-10 right-10 w-40 h-40 bg-white/10 rounded-full blur-xl" />

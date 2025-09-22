@@ -108,7 +108,7 @@ const FaleConosco = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative pt-32 pb-16 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 overflow-hidden">
+      <section className="relative pt-24 pb-10 bg-gradient-to-br from-primary/5 via-secondary/5 to-accent/5 overflow-hidden">
         <div className="absolute inset-0 opacity-30" style={{
           backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000' fill-opacity='0.02'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"
         }}></div>
@@ -142,7 +142,7 @@ const FaleConosco = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-16 bg-muted/30">
+      <section className="py-10 bg-muted/30">
         <div className="container mx-auto px-4">
           <ScrollAnimation>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -161,7 +161,7 @@ const FaleConosco = () => {
       </section>
 
       {/* Main Contact Section */}
-      <section className="py-20">
+      <section className="py-12">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-5 gap-12">
             

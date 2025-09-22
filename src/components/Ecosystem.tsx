@@ -5,7 +5,7 @@ import ScrollAnimation from "./ScrollAnimation";
 
 const Ecosystem = () => {
   return (
-    <section id="ecossistema" className="py-20 bg-gradient-to-br from-auxiliary/20 to-muted/40">
+    <section id="ecossistema" className="py-12 bg-gradient-to-br from-auxiliary/20 to-muted/40">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
