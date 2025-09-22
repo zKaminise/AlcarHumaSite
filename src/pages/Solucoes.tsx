@@ -17,8 +17,8 @@ const Solucoes = () => {
       <section className="pt-24 pb-10 px-4 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
-            <h1 className="text-4xl md:text-6xl font-bold text-gradient mb-6 leading-tight">
-              Nossas Soluções
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+              <span className="text-gradient">Nossas Soluções</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Transformamos desafios em oportunidades através de soluções estratégicas 

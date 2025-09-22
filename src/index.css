@@ -168,13 +168,7 @@ All colors MUST be HSL.
 
   /* Text Gradients */
   .text-gradient {
-    background: linear-gradient(90deg, hsl(var(--primary)) 0%, hsl(var(--primary-light)) 50%, hsl(var(--secondary)) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-    background-size: 200% 100%;
-    background-position: right center;
+    @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
   }
 
   /* Scroll Animations */

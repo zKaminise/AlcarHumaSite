@@ -45,8 +45,8 @@ const Parceiros = () => {
       <section className="pt-24 pb-10 px-4 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
-            <h1 className="text-4xl md:text-6xl font-bold text-gradient mb-6 leading-tight">
-              Nosso Ecossistema de Especialistas
+            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+              <span className="text-gradient">Nosso Ecossistema de Especialistas</span>
             </h1>
             <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
               Acreditamos no poder da colaboração. Unimos os melhores talentos de diversas áreas 
