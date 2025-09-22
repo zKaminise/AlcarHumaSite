@@ -458,27 +458,6 @@ const FaleConosco = () => {
                     </div>
                   </div>
 
-                  {/* CTA Box */}
-                  <div className="bg-gradient-to-br from-primary/10 to-secondary/10 p-6 rounded-xl border border-primary/20">
-                    <h4 className="font-bold text-foreground mb-2">🚀 Consultoria Gratuita</h4>
-                    <p className="text-sm text-muted-foreground mb-4">
-                      Primeira conversa sem compromisso para entender seus desafios e apresentar soluções.
-                    </p>
-                    <div className="text-xs text-muted-foreground">
-                      <div className="flex items-center gap-2 mb-1">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <span>Análise personalizada</span>
-                      </div>
-                      <div className="flex items-center gap-2 mb-1">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <span>Recomendações práticas</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
-                        <span>Sem compromisso</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </ScrollAnimation>
             </div>
