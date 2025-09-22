@@ -13,7 +13,7 @@ const Services = () => {
     {
       icon: Building,
       title: "Governança, Riscos e Conformidade (GRC)",
-      description: "Fortaleça as bases do seu negócio. Implementamos estruturas de governança robustas, gerenciamos riscos e garantimos a conformidade para proteger e otimizar sua operação.",
+      description: "Fortaleça as bases do seu negócio. Implementamos estruturas de governança robustas, gerenciamos riscos e garantimos a conformidade para proteger e otimizar toda sua operação.",
       buttonText: "Saiba Mais"
     },
     {
