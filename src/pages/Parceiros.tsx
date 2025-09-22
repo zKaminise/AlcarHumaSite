@@ -60,21 +60,22 @@ const Parceiros = () => {
       <section className="py-16 px-4 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-4xl mx-auto">
           <ScrollAnimation>
-            <div className="text-center">
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Em um mundo de desafios empresariais cada vez mais complexos e multifacetados, 
-                sabemos que nenhuma empresa, por mais competente que seja, detém todas as respostas. 
-                Na Alçar Humà, valorizamos a inteligência coletiva e a expertise complementar. 
-                Por isso, construímos com rigor um ecossistema de parceiros estratégicos – profissionais 
-                e empresas renomadas em suas áreas de atuação – que ampliam a nossa capacidade de 
-                entregar soluções integradas e de alta performance.
-              </p>
-              <br />
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                Quando você escolhe a Alçar Humà, não acessa apenas o nosso know-how, mas uma rede 
-                cuidadosamente curada de talentos prontos para alavancar seu negócio.
-              </p>
-            </div>
+            <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 max-w-4xl mx-auto">
+              <CardContent className="p-8">
+                <p className="text-lg text-card-dark-foreground-muted leading-relaxed mb-6">
+                  Em um mundo de desafios empresariais cada vez mais complexos e multifacetados, 
+                  sabemos que nenhuma empresa, por mais competente que seja, detém todas as respostas. 
+                  Na Alçar Humà, valorizamos a inteligência coletiva e a expertise complementar. 
+                  Por isso, construímos com rigor um ecossistema de parceiros estratégicos – profissionais 
+                  e empresas renomadas em suas áreas de atuação – que ampliam a nossa capacidade de 
+                  entregar soluções integradas e de alta performance.
+                </p>
+                <p className="text-lg text-card-dark-foreground-muted leading-relaxed">
+                  Quando você escolhe a Alçar Humà, não acessa apenas o nosso know-how, mas uma rede 
+                  cuidadosamente curada de talentos prontos para alavancar seu negócio.
+                </p>
+              </CardContent>
+            </Card>
           </ScrollAnimation>
         </div>
       </section>
@@ -117,7 +118,7 @@ const Parceiros = () => {
                         <p className="text-card-dark-foreground-muted text-sm leading-relaxed line-clamp-3">
                           {parceiro.descricao}
                         </p>
-                        <div className="mt-4 text-primary text-sm font-medium group-hover:underline">
+                        <div className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300">
                           Saiba mais →
                         </div>
                       </CardContent>

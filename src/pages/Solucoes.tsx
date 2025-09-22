@@ -43,9 +43,9 @@ const Solucoes = () => {
                 Vamos além da obrigação legal. Transformamos a gestão de riscos psicossociais 
                 em um pilar para um ambiente de trabalho mais seguro, saudável e produtivo.
               </p>
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 max-w-4xl mx-auto">
-                <h3 className="text-lg font-semibold text-foreground mb-2">Para quem é?</h3>
-                <p className="text-muted-foreground">
+              <div className="bg-card-dark border border-border/30 rounded-lg p-6 max-w-4xl mx-auto">
+                <h3 className="text-lg font-semibold text-card-dark-foreground mb-2">Para quem é?</h3>
+                <p className="text-card-dark-foreground-muted">
                   Para líderes, gestores de RH e empresas comprometidas com o bem-estar de suas 
                   equipes e que buscam se adequar proativamente às novas diretrizes da NR-1.
                 </p>
@@ -158,9 +158,9 @@ const Solucoes = () => {
                 Construímos os alicerces para que sua empresa cresça de forma segura, 
                 eficiente e transparente.
               </p>
-              <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 max-w-4xl mx-auto">
-                <h3 className="text-lg font-semibold text-foreground mb-2">Para quem é?</h3>
-                <p className="text-muted-foreground">
+              <div className="bg-card-dark border border-border/30 rounded-lg p-6 max-w-4xl mx-auto">
+                <h3 className="text-lg font-semibold text-card-dark-foreground mb-2">Para quem é?</h3>
+                <p className="text-card-dark-foreground-muted">
                   Para empresas em crescimento que precisam organizar processos, mitigar riscos, 
                   garantir a conformidade (incluindo LGPD) e preparar a organização para o próximo 
                   nível de maturidade.

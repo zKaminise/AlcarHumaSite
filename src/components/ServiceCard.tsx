@@ -25,8 +25,7 @@ const ServiceCard = ({ title, description, buttonText, delay = 0, onClick }: Ser
             {description}
           </CardDescription>
           <Button 
-            variant="outline" 
-            className="w-full group border-card-dark-foreground-muted/30 text-card-dark-foreground hover:bg-card-dark-foreground hover:text-card-dark transition-all duration-300"
+            className="w-full group bg-card-dark text-card-dark-foreground border border-card-dark-foreground-muted/30 hover:bg-card-dark/80 transition-all duration-300"
             onClick={onClick}
           >
             {buttonText}
