@@ -42,6 +42,7 @@ const Header = () => {
     { name: "Soluções", href: "/solucoes" },
     { name: "Método Impulsionar", href: "/metodo-impulsionar" },
     { name: "Parceiros", href: "/parceiros" },
+    { name: "Artigos", href: "/artigos" },
     { name: "Contato", href: "/contato" },
   ];
 
