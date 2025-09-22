@@ -115,7 +115,7 @@ const FaleConosco = () => {
         <div className="container mx-auto px-4 relative">
           <ScrollAnimation>
             <div className="text-center max-w-5xl mx-auto">
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent leading-tight">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gradient leading-tight">
                 Fale Conosco
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">

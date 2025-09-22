@@ -38,7 +38,7 @@ const MetodoImpulsionar = () => {
             <ScrollAnimation>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
                 Método Impulsionar:{" "}
-                <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+                <span className="text-gradient">
                   Sua Carreira em Aceleração
                 </span>
               </h1>
