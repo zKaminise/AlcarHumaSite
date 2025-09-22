@@ -45,8 +45,8 @@ const Header = () => {
   ];
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300 ${isAtTop ? 'py-2' : 'py-1'}`}>
-      <div className={`container mx-auto px-4 transition-all duration-300 ${isAtTop ? 'py-6' : 'py-3'}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border transition-all duration-300 ${isAtTop ? 'py-1' : 'py-1'}`}>
+      <div className={`container mx-auto px-4 transition-all duration-300 ${isAtTop ? 'py-3' : 'py-2'}`}>
         <div className="flex items-center justify-between">
           {/* Logo */}
           <button 
@@ -56,7 +56,7 @@ const Header = () => {
             <img 
               src={logoAlcar} 
               alt="Alçar Humà - Gestão e Pessoas" 
-              className={`w-auto object-contain transition-all duration-300 group-hover:scale-105 ${isAtTop ? 'h-16' : 'h-12'}`}
+              className={`w-auto object-contain transition-all duration-300 group-hover:scale-105 ${isAtTop ? 'h-12' : 'h-10'}`}
             />
           </button>
 
