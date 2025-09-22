@@ -37,7 +37,6 @@ const Header = () => {
   };
 
   const menuItems = [
-    { name: "Início", href: "/" },
     { name: "Sobre Nós", href: "/sobre-nos" },
     { name: "Soluções", href: "/solucoes" },
     { name: "Método Impulsionar", href: "/metodo-impulsionar" },
@@ -50,13 +49,16 @@ const Header = () => {
       <div className={`container mx-auto px-4 transition-all duration-300 ${isAtTop ? 'py-6' : 'py-3'}`}>
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-3">
+          <button 
+            onClick={() => handleNavigation("/")}
+            className="flex items-center space-x-3 group"
+          >
             <img 
               src={logoAlcar} 
               alt="Alçar Humà - Gestão e Pessoas" 
-              className={`w-auto object-contain transition-all duration-300 ${isAtTop ? 'h-16' : 'h-12'}`}
+              className={`w-auto object-contain transition-all duration-300 group-hover:scale-105 ${isAtTop ? 'h-16' : 'h-12'}`}
             />
-          </div>
+          </button>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
