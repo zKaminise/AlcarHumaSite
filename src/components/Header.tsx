@@ -76,7 +76,7 @@ const Header = () => {
           <div className="hidden md:block">
             <Button 
               className="btn-hero-secondary"
-              onClick={() => handleNavigation("/contato")}
+              onClick={() => handleNavigation("/fale-conosco")}
             >
               Fale Conosco
             </Button>
@@ -111,7 +111,7 @@ const Header = () => {
                 className="btn-hero-secondary mt-4"
                 onClick={() => {
                   setIsMenuOpen(false);
-                  handleNavigation("/contato");
+                  handleNavigation("/fale-conosco");
                 }}
               >
                 Fale Conosco
