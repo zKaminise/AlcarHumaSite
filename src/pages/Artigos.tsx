@@ -171,26 +171,26 @@ const Artigos = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredArticles.map((article, index) => (
                 <ScrollAnimation key={article.id} delay={index * 100}>
-                  <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20">
-                    <div className="aspect-video bg-gradient-to-br from-primary/10 to-secondary/10 rounded-t-lg mb-4 flex items-center justify-center">
-                      <BookOpen className="h-12 w-12 text-primary/40" />
+                  <Card className="group hover:shadow-lg transition-all duration-300 cursor-pointer bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40">
+                    <div className="aspect-video bg-gradient-to-br from-card-dark-foreground/10 to-card-dark-foreground/20 rounded-t-lg mb-4 flex items-center justify-center">
+                      <BookOpen className="h-12 w-12 text-card-dark-foreground/60" />
                     </div>
                     <CardHeader className="pb-3">
                       <div className="flex items-center justify-between mb-2">
-                        <Badge variant="secondary" className="text-xs">
+                        <Badge variant="secondary" className="text-xs bg-card-dark-foreground/20 text-card-dark-foreground">
                           {article.category}
                         </Badge>
-                        <div className="flex items-center text-xs text-muted-foreground">
+                        <div className="flex items-center text-xs text-card-dark-foreground-muted">
                           <Calendar className="h-3 w-3 mr-1" />
                           {new Date(article.date).toLocaleDateString('pt-BR')}
                         </div>
                       </div>
-                      <CardTitle className="text-lg font-semibold leading-tight group-hover:text-primary transition-colors">
+                      <CardTitle className="text-lg font-semibold leading-tight text-card-dark-foreground group-hover:text-card-dark-foreground transition-colors">
                         {article.title}
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="pt-0">
-                      <CardDescription className="text-muted-foreground leading-relaxed">
+                      <CardDescription className="text-card-dark-foreground-muted leading-relaxed">
                         {article.excerpt}
                       </CardDescription>
                     </CardContent>
@@ -217,12 +217,12 @@ const Artigos = () => {
         <section className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <ScrollAnimation>
-              <Card className="bg-gradient-to-r from-primary/10 to-secondary/10 border-primary/20">
+              <Card className="bg-card-dark border-border/30">
                 <CardHeader className="text-center pb-6">
-                  <CardTitle className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+                  <CardTitle className="text-2xl md:text-3xl font-bold text-card-dark-foreground mb-4">
                     Não perca nenhuma atualização.
                   </CardTitle>
-                  <CardDescription className="text-lg text-muted-foreground">
+                  <CardDescription className="text-lg text-card-dark-foreground-muted">
                     Deseja receber insights exclusivos e as últimas tendências diretamente na sua caixa de entrada? 
                     Assine nossa newsletter e mantenha-se à frente, com conteúdo relevante para o crescimento da sua carreira e do seu negócio.
                   </CardDescription>

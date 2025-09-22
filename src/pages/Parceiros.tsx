@@ -99,7 +99,7 @@ const Parceiros = () => {
               <ScrollAnimation key={parceiro.id} delay={index * 100}>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Card className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300 cursor-pointer group">
+                    <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 cursor-pointer group">
                       <CardContent className="p-6 text-center">
                         <div className="w-20 h-20 mx-auto mb-4 bg-muted rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
                           <img 
@@ -108,13 +108,13 @@ const Parceiros = () => {
                             className="w-12 h-12 object-contain"
                           />
                         </div>
-                        <h3 className="text-xl font-semibold text-foreground mb-2">
+                        <h3 className="text-xl font-semibold text-card-dark-foreground mb-2">
                           {parceiro.nome}
                         </h3>
-                        <p className="text-primary font-medium mb-3">
+                        <p className="text-card-dark-foreground font-medium mb-3">
                           {parceiro.especialidade}
                         </p>
-                        <p className="text-muted-foreground text-sm leading-relaxed line-clamp-3">
+                        <p className="text-card-dark-foreground-muted text-sm leading-relaxed line-clamp-3">
                           {parceiro.descricao}
                         </p>
                         <div className="mt-4 text-primary text-sm font-medium group-hover:underline">
@@ -166,20 +166,20 @@ const Parceiros = () => {
 
           <ScrollAnimation delay={200}>
             <div className="max-w-4xl mx-auto">
-              <Card className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50">
+              <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30">
                 <CardContent className="p-8">
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-lg text-card-dark-foreground-muted leading-relaxed mb-6">
                     Entendemos que gerenciar múltiplos fornecedores e especialistas pode ser um 
                     desafio para qualquer empresa, especialmente para pequenas e médias. Por isso, 
                     na Alçar Humà, simplificamos esse processo para você.
                   </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed mb-6">
+                  <p className="text-lg text-card-dark-foreground-muted leading-relaxed mb-6">
                     Nós atuamos como seu único ponto de contato, realizando a curadoria, a gestão 
                     e a integração de todos os especialistas necessários para o seu projeto. Isso 
                     significa que você se beneficia da mais alta expertise em diversas áreas, sem 
                     a complexidade operacional.
                   </p>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <p className="text-lg text-card-dark-foreground-muted leading-relaxed">
                     Nosso papel é garantir que todas as pontas se conectem, que a comunicação seja 
                     fluida e que o resultado final seja uma solução coesa, alinhada aos seus objetivos 
                     e entregue com a excelência que sua empresa merece. Sua jornada conosco é clara, 

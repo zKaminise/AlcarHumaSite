@@ -82,17 +82,17 @@ const Solucoes = () => {
                     description: "Atuamos na implementação de ações, como workshops sobre comunicação não violenta, programas de segurança psicológica e treinamentos para a liderança."
                   }
                 ].map((item, index) => (
-                  <Card key={index} className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+                  <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className="bg-primary text-primary-foreground rounded-full w-8 h-8 flex items-center justify-center font-bold text-sm flex-shrink-0 mt-1">
                           {item.step}
                         </div>
                         <div>
-                          <h4 className="text-lg font-semibold text-foreground mb-2">
+                          <h4 className="text-lg font-semibold text-card-dark-foreground mb-2">
                             {item.title}
                           </h4>
-                          <p className="text-muted-foreground leading-relaxed">
+                          <p className="text-card-dark-foreground-muted leading-relaxed">
                             {item.description}
                           </p>
                         </div>
@@ -118,10 +118,10 @@ const Solucoes = () => {
                   { icon: Zap, title: "Aumento do engajamento e da produtividade", color: "text-yellow-500" },
                   { icon: Shield, title: "Fortalecimento da sua marca empregadora", color: "text-purple-500" }
                 ].map((benefit, index) => (
-                  <Card key={index} className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+                  <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <benefit.icon className={`w-8 h-8 mx-auto mb-3 ${benefit.color}`} />
-                      <p className="text-foreground font-medium">{benefit.title}</p>
+                      <p className="text-card-dark-foreground font-medium">{benefit.title}</p>
                     </CardContent>
                   </Card>
                 ))}
@@ -198,12 +198,12 @@ const Solucoes = () => {
                     description: "Criamos políticas e controles para o uso ético e seguro das informações, protegendo o ativo mais valioso da sua empresa."
                   }
                 ].map((item, index) => (
-                  <Card key={index} className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+                  <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6">
-                      <h4 className="text-lg font-semibold text-foreground mb-3">
+                      <h4 className="text-lg font-semibold text-card-dark-foreground mb-3">
                         {item.title}
                       </h4>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-card-dark-foreground-muted leading-relaxed">
                         {item.description}
                       </p>
                     </CardContent>
@@ -227,10 +227,10 @@ const Solucoes = () => {
                   { icon: Lock, title: "Proteção de dados e reputação da marca", color: "text-red-500" },
                   { icon: Sprout, title: "Preparação para receber investimentos e escalar o negócio", color: "text-emerald-500" }
                 ].map((benefit, index) => (
-                  <Card key={index} className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+                  <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <benefit.icon className={`w-8 h-8 mx-auto mb-3 ${benefit.color}`} />
-                      <p className="text-foreground font-medium">{benefit.title}</p>
+                      <p className="text-card-dark-foreground font-medium">{benefit.title}</p>
                     </CardContent>
                   </Card>
                 ))}

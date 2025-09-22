@@ -14,19 +14,19 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, description, buttonText, delay = 0, onClick }: ServiceCardProps) => {
   return (
     <ScrollAnimation delay={delay}>
-      <Card className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+      <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
         <CardHeader className="pb-3">
-          <CardTitle className="text-xl font-semibold text-foreground mb-2 leading-tight">
+          <CardTitle className="text-xl font-semibold text-card-dark-foreground mb-2 leading-tight">
             {title}
           </CardTitle>
         </CardHeader>
         <CardContent className="pt-0">
-          <CardDescription className="text-muted-foreground mb-4 leading-relaxed">
+          <CardDescription className="text-card-dark-foreground-muted mb-4 leading-relaxed">
             {description}
           </CardDescription>
           <Button 
             variant="outline" 
-            className="w-full group border-primary/20 text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+            className="w-full group border-card-dark-foreground-muted/30 text-card-dark-foreground hover:bg-card-dark-foreground hover:text-card-dark transition-all duration-300"
             onClick={onClick}
           >
             {buttonText}

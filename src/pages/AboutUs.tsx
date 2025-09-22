@@ -171,17 +171,17 @@ const AboutUs = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {values.map((value, index) => (
               <ScrollAnimation key={value.title} animationType="fade-in-up" delay={index * 100}>
-                <Card className="card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+                <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                   <CardHeader className="pb-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4">
-                      <value.icon className="h-6 w-6 text-primary-foreground" />
+                    <div className="w-12 h-12 bg-gradient-to-br from-card-dark-foreground/20 to-card-dark-foreground/30 rounded-xl flex items-center justify-center mb-4">
+                      <value.icon className="h-6 w-6 text-card-dark-foreground" />
                     </div>
-                    <CardTitle className="text-xl font-semibold text-foreground">
+                    <CardTitle className="text-xl font-semibold text-card-dark-foreground">
                       {value.title}
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription className="text-muted-foreground leading-relaxed">
+                    <CardDescription className="text-card-dark-foreground-muted leading-relaxed">
                       {value.description}
                     </CardDescription>
                   </CardContent>
