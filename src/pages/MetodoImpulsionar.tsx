@@ -57,8 +57,8 @@ const MetodoImpulsionar = () => {
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
             {benefits.map((benefit, index) => (
               <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
-                <Card className="text-center p-8 card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
-                  <CardContent className="pt-6">
+                <Card className="text-center card-floating card-glow bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/20 transition-all duration-300">
+                  <CardContent className="p-6">
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-6">
                       <benefit.icon className="h-8 w-8 text-primary" />
                     </div>
