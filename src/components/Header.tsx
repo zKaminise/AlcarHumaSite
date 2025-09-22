@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link, useNavigate } from "react-router-dom";
+import logoAlcar from "@/assets/logo-alcar.jpg";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -38,14 +39,12 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">A</span>
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground">Alçar Humà</h1>
-              <p className="text-xs text-muted-foreground">Consultoria Estratégica</p>
-            </div>
+          <div className="flex items-center space-x-3">
+            <img 
+              src={logoAlcar} 
+              alt="Alçar Humà - Gestão e Pessoas" 
+              className="h-12 w-auto object-contain"
+            />
           </div>
 
           {/* Desktop Navigation */}
