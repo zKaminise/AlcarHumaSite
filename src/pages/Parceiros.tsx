@@ -87,7 +87,7 @@ const Parceiros = () => {
             <div className="text-center mb-16">
               <Users className="w-16 h-16 mx-auto text-primary mb-6" />
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Nossos Especialistas
+                Nossos Parceiros
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
                 Conheça os profissionais que compõem nossa rede de excelência
