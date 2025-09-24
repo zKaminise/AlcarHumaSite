@@ -120,7 +120,7 @@ const Parceiros = () => {
                   <DialogContent className="max-w-md">
                     <DialogHeader>
                       <DialogTitle className="text-center">
-                        <div className="w-32 h-32 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-3">
+                        <div className="w-40 h-40 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-4">
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
