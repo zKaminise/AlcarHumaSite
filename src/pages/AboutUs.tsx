@@ -1,4 +1,4 @@
-import { Linkedin, Target, Eye, Heart, Award, Users2 } from "lucide-react";
+import { Linkedin, Target, Eye, Heart, Award, Users2, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -33,6 +33,11 @@ const AboutUs = () => {
       icon: Heart,
       title: "Humanização",
       description: "Valorização das pessoas como centro de toda transformação."
+    },
+    {
+      icon: Shield,
+      title: "Ética",
+      description: "A integridade e a transparência guiam nossas decisões, garantindo relações de confiança e impacto positivo."
     }
   ];
 
