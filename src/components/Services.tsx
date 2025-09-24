@@ -52,15 +52,16 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <ServiceCard
-              key={service.title}
-              title={service.title}
-              description={service.description}
-              buttonText={service.buttonText}
-              icon={service.icon}
-              delay={index * 100}
-              onClick={() => console.log(`Navigate to ${service.title}`)}
-            />
+            <div key={service.title} className="relative h-full flex flex-col">
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                buttonText={service.buttonText}
+                icon={service.icon}
+                delay={index * 100}
+                onClick={() => console.log(`Navigate to ${service.title}`)}
+              />
+            </div>
           ))}
         </div>
       </div>
