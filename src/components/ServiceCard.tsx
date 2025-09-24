@@ -33,7 +33,7 @@ const ServiceCard = ({ title, description, buttonText, icon: Icon, delay = 0, on
             </CardTitle>
           </CardHeader>
           <CardContent className="pt-0 pb-6 h-full flex flex-col">
-            <CardDescription className="text-card-dark-foreground-muted mb-6 leading-relaxed flex-1 text-center">
+            <CardDescription className="text-card-dark-foreground-muted mb-4 leading-relaxed flex-1 text-center">
               {description}
             </CardDescription>
             <Button 
