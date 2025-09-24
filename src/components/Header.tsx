@@ -38,10 +38,10 @@ const Header = () => {
 
   const menuItems = [
     { name: "Sobre Nós", href: "/sobre-nos" },
-    { name: "Soluções", href: "/solucoes" },
+    { name: "Nossas Soluções", href: "/solucoes" },
     { name: "Método Impulsionar", href: "/metodo-impulsionar" },
     { name: "Parceiros", href: "/parceiros" },
-    { name: "Artigos", href: "/artigos" },
+    { name: "Artigos & Insights", href: "/artigos" },
   ];
 
   return (
