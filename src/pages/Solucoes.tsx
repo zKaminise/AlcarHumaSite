@@ -1,4 +1,4 @@
-import { CheckCircle, Target, TrendingDown, Zap, Shield, Scale, BarChart3, Cog, Lock, Sprout } from "lucide-react";
+import { CheckCircle, Target, TrendingDown, Zap, Shield, Scale, BarChart3, Cog, Lock, Sprout, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
@@ -197,6 +197,10 @@ const Solucoes = () => {
                   {
                     title: "Governança de Dados e Segurança",
                     description: "Criamos políticas e controles para o uso ético e seguro das informações, protegendo o ativo mais valioso da sua empresa."
+                  },
+                  {
+                    title: "Cultura de Integridade e Ética",
+                    description: "Promovemos a internalização dos princípios de governança e conformidade, cultivando uma cultura organizacional de responsabilidade e transparência."
                   }
                 ].map((item, index) => (
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
@@ -222,16 +226,17 @@ const Solucoes = () => {
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { icon: Scale, title: "Maior segurança jurídica e operacional", color: "text-blue-500" },
-                  { icon: Target, title: "Tomada de decisão mais rápida e embasada", color: "text-green-500" },
-                  { icon: Cog, title: "Otimização de processos e redução de custos", color: "text-orange-500" },
-                  { icon: Lock, title: "Proteção de dados e reputação da marca", color: "text-red-500" },
-                  { icon: Sprout, title: "Preparação para receber investimentos e escalar o negócio", color: "text-emerald-500" }
+                  { icon: Scale, title: "Maior segurança jurídica\ne operacional", color: "text-blue-500" },
+                  { icon: Target, title: "Tomada de decisão mais\nrápida e embasada", color: "text-green-500" },
+                  { icon: Cog, title: "Otimização de processos\ne redução de custos", color: "text-orange-500" },
+                  { icon: Lock, title: "Proteção de dados\ne reputação da marca", color: "text-red-500" },
+                  { icon: Sprout, title: "Preparação para receber\ninvestimentos e escalar o negócio", color: "text-emerald-500" },
+                  { icon: Handshake, title: "Atração e retenção\nde talentos", color: "text-purple-500" }
                 ].map((benefit, index) => (
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <benefit.icon className={`w-8 h-8 mx-auto mb-3 ${benefit.color}`} />
-                      <p className="text-card-dark-foreground font-medium">{benefit.title}</p>
+                      <p className="text-card-dark-foreground font-medium whitespace-pre-line">{benefit.title}</p>
                     </CardContent>
                   </Card>
                 ))}
