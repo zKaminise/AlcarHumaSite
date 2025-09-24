@@ -15,14 +15,14 @@ const parceiros = [
     nome: "Carmo Soluções Empresariais",
     especialidade: "Consultoria Contábil e Financeira",
     descricao: "Consultoria Contábil e Financeira com aplicação do Método CRIAR, focado em transformar a gestão de empresas e potencializar resultados.",
-    logo: "/src/assets/logo-carmo.png"
+    logo: "/logo-carmo.png"
   },
   {
     id: 2,
     nome: "Taísa Gutierres",
     especialidade: "Especialista em RH e Analista Comportamental",
     descricao: "Especialista em RH e Analista Comportamental, com mais de 10 anos de experiência, focada em onboarding, análise de perfil, currículo estratégico e cargos e salários.",
-    logo: "/src/assets/logo-taisa.jpeg"
+    logo: "/logo-taisa.jpeg"
   }
 ];
 
