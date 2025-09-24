@@ -52,7 +52,7 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={service.title} className="relative">
+            <div key={service.title} className="relative h-full flex flex-col">
               {/* Icon */}
               <ScrollAnimation animationType="fade-in-up" delay={index * 100}>
                 <div className="flex items-center justify-center mb-6">
