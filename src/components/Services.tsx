@@ -52,25 +52,15 @@ const Services = () => {
         {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={service.title} className="relative h-full flex flex-col">
-              {/* Icon */}
-              <ScrollAnimation animationType="fade-in-up" delay={index * 100}>
-                <div className="flex items-center justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-md">
-                    <service.icon className="h-8 w-8 text-primary-foreground" />
-                  </div>
-                </div>
-              </ScrollAnimation>
-
-              {/* Service Card */}
-              <ServiceCard
-                title={service.title}
-                description={service.description}
-                buttonText={service.buttonText}
-                delay={index * 100 + 100}
-                onClick={() => console.log(`Navigate to ${service.title}`)}
-              />
-            </div>
+            <ServiceCard
+              key={service.title}
+              title={service.title}
+              description={service.description}
+              buttonText={service.buttonText}
+              icon={service.icon}
+              delay={index * 100}
+              onClick={() => console.log(`Navigate to ${service.title}`)}
+            />
           ))}
         </div>
       </div>
