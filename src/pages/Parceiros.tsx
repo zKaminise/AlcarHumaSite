@@ -8,29 +8,22 @@ import ScrollAnimation from "@/components/ScrollAnimation";
 import { useNavigate } from "react-router-dom";
 import { Users, Target, Network } from "lucide-react";
 
-// Dados de exemplo dos parceiros - serão substituídos pelos dados reais
+// Dados dos parceiros
 const parceiros = [
   {
     id: 1,
-    nome: "Dr. Ricardo Silva",
-    especialidade: "Especialista em Comunicação Não-Violenta e Liderança",
-    descricao: "Com mais de 15 anos de experiência em desenvolvimento humano, Dr. Ricardo traz metodologias inovadoras para transformar a comunicação organizacional e fortalecer a liderança.",
-    logo: "/placeholder.svg", // Será substituído pela logo real
+    nome: "Carmo Soluções Empresariais",
+    especialidade: "Consultoria Contábil e Financeira",
+    descricao: "Consultoria Contábil e Financeira com aplicação do Método CRIAR, focado em transformar a gestão de empresas e potencializar resultados.",
+    logo: "/src/assets/logo-carmo.png"
   },
   {
     id: 2,
-    nome: "Ana Carolina Mendes",
-    especialidade: "Consultora em Proteção de Dados e LGPD",
-    descricao: "Especialista reconhecida em compliance e proteção de dados, Ana Carolina garante que sua empresa esteja alinhada com as melhores práticas de segurança da informação.",
-    logo: "/placeholder.svg", // Será substituído pela logo real
-  },
-  {
-    id: 3,
-    nome: "Carlos Eduardo Nunes",
-    especialidade: "Consultor em Gestão de Riscos Empresariais",
-    descricao: "Expert em identificação e mitigação de riscos corporativos, Carlos Eduardo desenvolve estratégias robustas para proteger e fortalecer organizações.",
-    logo: "/placeholder.svg", // Será substituído pela logo real
-  },
+    nome: "Taísa Gutierres",
+    especialidade: "Especialista em RH e Analista Comportamental",
+    descricao: "Especialista em RH e Analista Comportamental, com mais de 10 anos de experiência, focada em onboarding, análise de perfil, currículo estratégico e cargos e salários.",
+    logo: "/src/assets/logo-taisa.jpeg"
+  }
 ];
 
 const Parceiros = () => {
