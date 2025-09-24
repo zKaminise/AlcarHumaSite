@@ -25,7 +25,7 @@ const Services = () => {
     {
       icon: Presentation,
       title: "Palestras &\nWorkshops",
-      description: "Nossas palestras e workshops levam conteúdo prático e relevante que inspira a ação a equipes e lideranças sobre temas como liderança humanizada, comunicação, cultura e tendências.",
+      description: "Nossas palestras e workshops levam conteúdo prático e relevante que inspira a ação, a equipes e a lideranças sobre temas como liderança humanizada, comunicação, cultura e tendências de mercado.",
       buttonText: "Ver Temas de Palestras"
     }
   ];
@@ -50,9 +50,9 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 auto-rows-fr">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
-            <div key={service.title} className="relative flex flex-col h-full">
+            <div key={service.title} className="relative h-full flex flex-col">
               {/* Icon */}
               <ScrollAnimation animationType="fade-in-up" delay={index * 100}>
                 <div className="flex items-center justify-center mb-6">
@@ -63,15 +63,13 @@ const Services = () => {
               </ScrollAnimation>
 
               {/* Service Card */}
-              <div className="flex-1">
-                <ServiceCard
-                  title={service.title}
-                  description={service.description}
-                  buttonText={service.buttonText}
-                  delay={index * 100 + 100}
-                  onClick={() => console.log(`Navigate to ${service.title}`)}
-                />
-              </div>
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                buttonText={service.buttonText}
+                delay={index * 100 + 100}
+                onClick={() => console.log(`Navigate to ${service.title}`)}
+              />
             </div>
           ))}
         </div>
