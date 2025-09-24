@@ -112,16 +112,17 @@ const Solucoes = () => {
               </h3>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { icon: CheckCircle, title: "Conformidade total com a NR-1", color: "text-green-500" },
-                  { icon: Target, title: "Promoção da saúde mental e bem-estar", color: "text-blue-500" },
-                  { icon: TrendingDown, title: "Redução do absenteísmo e do turnover", color: "text-orange-500" },
-                  { icon: Zap, title: "Aumento do engajamento e da produtividade", color: "text-yellow-500" },
-                  { icon: Shield, title: "Fortalecimento da sua marca empregadora", color: "text-purple-500" }
+                  { icon: CheckCircle, title: "Conformidade total\ncom a NR-1", color: "text-green-500" },
+                  { icon: Target, title: "Promoção da saúde mental\ne bem-estar", color: "text-blue-500" },
+                  { icon: TrendingDown, title: "Redução do absenteísmo\ne do turnover", color: "text-orange-500" },
+                  { icon: Zap, title: "Aumento do engajamento\ne da produtividade", color: "text-yellow-500" },
+                  { icon: Shield, title: "Fortalecimento da sua\nmarca empregadora", color: "text-purple-500" },
+                  { icon: Scale, title: "Prevenção de litígios\ntrabalhistas", color: "text-red-500" }
                 ].map((benefit, index) => (
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <benefit.icon className={`w-8 h-8 mx-auto mb-3 ${benefit.color}`} />
-                      <p className="text-card-dark-foreground font-medium">{benefit.title}</p>
+                      <p className="text-card-dark-foreground font-medium whitespace-pre-line">{benefit.title}</p>
                     </CardContent>
                   </Card>
                 ))}
