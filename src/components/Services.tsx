@@ -50,7 +50,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 auto-rows-fr">
           {services.map((service, index) => (
             <div key={service.title} className="relative flex flex-col h-full">
               {/* Icon */}
