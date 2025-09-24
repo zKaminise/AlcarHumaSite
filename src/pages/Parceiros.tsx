@@ -23,6 +23,13 @@ const parceiros = [
     especialidade: "Especialista em RH e Analista Comportamental",
     descricao: "Especialista em RH e Analista Comportamental, com mais de 10 anos de experiência, focada em onboarding, análise de perfil, currículo estratégico e cargos e salários.",
     logo: "/src/assets/logo-taisa.jpeg"
+  },
+  {
+    id: 3,
+    nome: "Tech Solutions Pro",
+    especialidade: "Consultoria em Transformação Digital",
+    descricao: "Especialista em implementação de soluções tecnológicas avançadas, automação de processos e estratégias de inovação digital para maximizar a eficiência operacional.",
+    logo: "/placeholder.svg"
   }
 ];
 
@@ -88,7 +95,7 @@ const Parceiros = () => {
             </div>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {parceiros.map((parceiro, index) => (
               <ScrollAnimation key={parceiro.id} delay={index * 100}>
                 <Dialog>
