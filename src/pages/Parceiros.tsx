@@ -88,18 +88,18 @@ const Parceiros = () => {
             </div>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
             {parceiros.map((parceiro, index) => (
               <ScrollAnimation key={parceiro.id} delay={index * 100}>
                 <Dialog>
                   <DialogTrigger asChild>
-                    <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 cursor-pointer group">
-                      <CardContent className="p-6 text-center">
-                        <div className="w-20 h-20 mx-auto mb-4 bg-muted rounded-full flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
+                    <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 cursor-pointer group h-full">
+                      <CardContent className="p-6 text-center h-full flex flex-col">
+                        <div className="w-32 h-32 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2">
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
-                            className="w-12 h-12 object-contain"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                         <h3 className="text-xl font-semibold text-card-dark-foreground mb-2">
@@ -108,7 +108,7 @@ const Parceiros = () => {
                         <p className="text-card-dark-foreground font-medium mb-3">
                           {parceiro.especialidade}
                         </p>
-                        <p className="text-card-dark-foreground-muted text-sm leading-relaxed line-clamp-3">
+                        <p className="text-card-dark-foreground-muted text-sm leading-relaxed flex-1">
                           {parceiro.descricao}
                         </p>
                         <div className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300">
@@ -120,11 +120,11 @@ const Parceiros = () => {
                   <DialogContent className="max-w-md">
                     <DialogHeader>
                       <DialogTitle className="text-center">
-                        <div className="w-16 h-16 mx-auto mb-4 bg-muted rounded-full flex items-center justify-center">
+                        <div className="w-20 h-20 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-2">
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
-                            className="w-10 h-10 object-contain"
+                            className="w-full h-full object-contain"
                           />
                         </div>
                         {parceiro.nome}
