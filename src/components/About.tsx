@@ -12,7 +12,7 @@ const About = () => {
           {/* Content */}
           <div className="space-y-8">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
+              <h2 className="title-section text-foreground">
                 Mais que uma consultoria, uma{" "}
                 <span className="text-gradient">parceira estratégica</span>{" "}
                 para o seu crescimento.

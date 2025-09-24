@@ -17,7 +17,7 @@ const Solucoes = () => {
       <section className="pt-24 pb-10 px-4 bg-gradient-to-br from-background via-background to-muted/20">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="title-hero text-foreground mb-6">
               <span className="text-gradient">Nossas Soluções</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -33,10 +33,10 @@ const Solucoes = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="title-section text-foreground mb-6">
                 Gestão de Riscos Psicossociais (NR-1)
               </h1>
-              <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              <h2 className="subtitle-main text-muted-foreground mb-8">
                 Cuidado, Conformidade e Performance
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
@@ -149,10 +149,10 @@ const Solucoes = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <h1 className="text-3xl md:text-5xl font-bold text-foreground mb-6 leading-tight">
+              <h1 className="title-section text-foreground mb-6">
                 Governança, Riscos e Conformidade (GRC)
               </h1>
-              <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed">
+              <h2 className="subtitle-main text-muted-foreground mb-8">
                 Estrutura Sólida para Decisões Inteligentes
               </h2>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">

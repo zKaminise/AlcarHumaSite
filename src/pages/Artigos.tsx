@@ -98,12 +98,12 @@ const Artigos = () => {
         <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation>
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h1 className="title-hero text-foreground mb-6">
                 <span className="text-gradient">Artigos & Insights</span>
               </h1>
             </ScrollAnimation>
             <ScrollAnimation delay={200}>
-              <h2 className="text-xl md:text-2xl text-muted-foreground mb-8">
+              <h2 className="subtitle-main text-muted-foreground mb-8">
                 Conhecimento prático e tendências de mercado para impulsionar sua carreira e seus negócios.
               </h2>
             </ScrollAnimation>

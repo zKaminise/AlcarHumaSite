@@ -34,7 +34,7 @@ const Ecosystem = () => {
           {/* Content */}
           <div className="space-y-8">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
+              <h2 className="title-section text-foreground">
                 <span className="text-gradient">Inteligência Coletiva</span>{" "}
                 para o seu Negócio
               </h2>

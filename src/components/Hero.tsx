@@ -14,7 +14,7 @@ const Hero = () => {
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
             <ScrollAnimation animationType="fade-in-up">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              <h1 className="title-hero">
                 <span className="text-gradient">Transformar pessoas.</span>
                 <br />
                 <span className="text-foreground">Fortalecer empresas.</span>
@@ -22,7 +22,7 @@ const Hero = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={200}>
-              <h2 className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-2xl">
+              <h2 className="subtitle-main text-muted-foreground max-w-2xl">
                 Integramos governança, gestão de riscos e desenvolvimento humano para construir 
                 organizações resilientes, eficientes e preparadas para o futuro.
               </h2>

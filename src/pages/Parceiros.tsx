@@ -38,10 +38,10 @@ const Parceiros = () => {
       <section className="pt-24 pb-4 px-4 bg-gradient-to-br from-background via-background to-muted/5">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
+            <h1 className="title-hero text-foreground mb-6">
               <span className="text-gradient">Nosso Ecossistema de Especialistas</span>
             </h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground mb-8 leading-relaxed max-w-4xl mx-auto">
+            <h2 className="subtitle-main text-muted-foreground mb-8 max-w-4xl mx-auto">
               Acreditamos no poder da colaboração. Unimos os melhores talentos de diversas áreas 
               para entregar a solução mais completa e precisa para o seu desafio.
             </h2>
@@ -79,7 +79,7 @@ const Parceiros = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <Users className="w-16 h-16 mx-auto text-primary mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+              <h2 className="title-section text-foreground mb-6">
                 Nossos Parceiros
               </h2>
               <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -152,7 +152,7 @@ const Parceiros = () => {
           <ScrollAnimation>
             <div className="text-center mb-12">
               <Network className="w-16 h-16 mx-auto text-primary mb-6" />
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
+              <h2 className="title-section text-foreground mb-8">
                 Inteligência Coletiva a Serviço do Seu Negócio
               </h2>
             </div>

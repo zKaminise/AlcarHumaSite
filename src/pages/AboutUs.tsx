@@ -50,7 +50,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation animationType="fade-in-up">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+              <h1 className="title-hero mb-8">
                 Nossa Essência: <span className="text-gradient">Estratégia, Direito</span> e a Força do{" "}
                 <span className="text-gradient">Fator Humano</span>
               </h1>
@@ -72,7 +72,7 @@ const AboutUs = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h2 className="title-section text-foreground mb-6">
                 O que nos <span className="text-gradient">Define</span>
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -167,7 +167,7 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              <h2 className="title-section text-foreground mb-6">
                 Nossos <span className="text-gradient">Valores</span>
               </h2>
             </ScrollAnimation>
@@ -220,7 +220,7 @@ const AboutUs = () => {
             {/* Content */}
             <div className="space-y-8">
               <ScrollAnimation animationType="fade-in-up">
-                <h2 className="text-4xl md:text-5xl font-bold text-foreground leading-tight">
+                <h2 className="title-section text-foreground">
                   Mais que uma consultoria, uma{" "}
                   <span className="text-gradient">rede de inteligência.</span>
                 </h2>
