@@ -144,7 +144,7 @@ const FaleConosco = () => {
       {/* Benefits Section */}
       <section className="py-16 bg-gradient-to-br from-muted/20 via-background to-auxiliary/10">
         <div className="container mx-auto px-4">
-          <ScrollAnimation>
+          <ScrollAnimation animationType="fade-in-scale" duration={1000}>
             <div className="text-center mb-12">
               <h1 className="title-section text-foreground mb-4">
                 Por que escolher a <span className="text-gradient">Alçar Humà?</span>
@@ -155,7 +155,7 @@ const FaleConosco = () => {
             </div>
           </ScrollAnimation>
           
-          <ScrollAnimation delay={200}>
+          <ScrollAnimation delay={200} animationType="bounce-in" duration={800}>
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, index) => (
                 <div 

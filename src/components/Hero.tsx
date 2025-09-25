@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="text-center lg:text-left space-y-8">
-            <ScrollAnimation animationType="fade-in-up">
+            <ScrollAnimation animationType="fade-in-scale" duration={1000}>
               <h1 className="title-hero">
                 <span className="text-gradient">Transformar pessoas.</span>
                 <br />
@@ -21,14 +21,14 @@ const Hero = () => {
               </h1>
             </ScrollAnimation>
 
-            <ScrollAnimation animationType="fade-in-up" delay={200}>
+            <ScrollAnimation animationType="fade-in-up" delay={200} duration={1200}>
               <p className="subtitle-main text-muted-foreground max-w-2xl">
                 Integramos governança, gestão de riscos e desenvolvimento humano para construir 
                 organizações resilientes, eficientes e preparadas para o futuro.
               </p>
             </ScrollAnimation>
 
-            <ScrollAnimation animationType="fade-in-up" delay={400}>
+            <ScrollAnimation animationType="slide-in-up" delay={400} duration={1000}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button className="btn-hero group">
                   Descubra o Método Impulsionar
@@ -43,7 +43,7 @@ const Hero = () => {
           </div>
 
           {/* Hero Image */}
-          <ScrollAnimation animationType="slide-in-right" delay={300}>
+          <ScrollAnimation animationType="slide-in-right" delay={300} duration={1200}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-6" />
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg">

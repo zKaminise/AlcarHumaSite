@@ -171,9 +171,15 @@ All colors MUST be HSL.
     @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
   }
 
-  /* Scroll Animations */
+  /* Scroll Animations - Enhanced and Smoother */
+  .scroll-animation {
+    will-change: transform, opacity;
+  }
+
   .fade-in-up {
-    @apply opacity-0 translate-y-8 transition-all duration-700 ease-out;
+    @apply opacity-0 translate-y-12;
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
   .fade-in-up.animate {
@@ -181,9 +187,137 @@ All colors MUST be HSL.
   }
 
   .slide-in-left {
-    @apply opacity-0 -translate-x-8 transition-all duration-700 ease-out;
+    @apply opacity-0 -translate-x-16;
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
   }
 
+  .slide-in-left.animate {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .slide-in-right {
+    @apply opacity-0 translate-x-16;
+    transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .slide-in-right.animate {
+    @apply opacity-100 translate-x-0;
+  }
+
+  .fade-in-scale {
+    @apply opacity-0 scale-95;
+    transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .fade-in-scale.animate {
+    @apply opacity-100 scale-100;
+  }
+
+  .slide-in-up {
+    @apply opacity-0 translate-y-20;
+    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .slide-in-up.animate {
+    @apply opacity-100 translate-y-0;
+  }
+
+  .bounce-in {
+    @apply opacity-0 scale-75;
+    transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55), 
+                transform 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+
+  .bounce-in.animate {
+    @apply opacity-100 scale-100;
+  }
+
+  /* Enhanced Card Animations */
+  .card-floating {
+    @apply transition-all duration-500 ease-out;
+    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .card-floating:hover {
+    @apply transform -translate-y-3;
+    box-shadow: 0 20px 40px hsl(var(--primary) / 0.15);
+  }
+
+  .card-glow {
+    @apply transition-all duration-700 ease-out;
+    box-shadow: 0 4px 16px hsl(var(--primary) / 0.08);
+  }
+  
+  .card-glow:hover {
+    box-shadow: 0 8px 32px hsl(var(--primary) / 0.2),
+                0 0 48px hsl(var(--primary) / 0.15);
+  }
+
+  /* Smooth Button Transitions */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-primary-light text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 16px hsl(var(--primary) / 0.2);
+  }
+
+  .btn-hero:hover {
+    @apply transform -translate-y-1 scale-105;
+    box-shadow: 0 8px 32px hsl(var(--primary) / 0.3);
+  }
+  
+  .btn-hero-secondary {
+    @apply border-2 border-primary text-primary px-8 py-4 rounded-xl font-semibold text-lg;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .btn-hero-secondary:hover {
+    @apply bg-primary text-primary-foreground transform -translate-y-1 scale-105;
+    box-shadow: 0 8px 32px hsl(var(--primary) / 0.25);
+  }
+
+  /* Enhanced Text Gradients */
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary via-primary-light to-secondary bg-clip-text text-transparent;
+    background-size: 200% 100%;
+    animation: gradient-shift 4s ease-in-out infinite;
+  }
+
+  @keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  /* Smooth Page Transitions */
+  .page-transition {
+    @apply transition-all duration-500 ease-out;
+  }
+
+  /* Global Scroll Behavior */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  /* Reduced Motion for Accessibility */
+  @media (prefers-reduced-motion: reduce) {
+    .fade-in-up,
+    .slide-in-left,
+    .slide-in-right,
+    .fade-in-scale,
+    .slide-in-up,
+    .bounce-in {
+      transition: none;
+    }
+    
+    .text-gradient {
+      animation: none;
+    }
+  }
   /* Typography Hierarchy */
   .title-hero {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold leading-tight;
@@ -199,17 +333,5 @@ All colors MUST be HSL.
 
   .subtitle-section {
     @apply text-lg md:text-xl leading-relaxed;
-  }
-
-  .slide-in-left.animate {
-    @apply opacity-100 translate-x-0;
-  }
-
-  .slide-in-right {
-    @apply opacity-0 translate-x-8 transition-all duration-700 ease-out;
-  }
-
-  .slide-in-right.animate {
-    @apply opacity-100 translate-x-0;
   }
 }

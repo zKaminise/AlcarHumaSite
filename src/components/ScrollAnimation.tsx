@@ -3,15 +3,17 @@ import { useEffect, useRef, ReactNode } from "react";
 interface ScrollAnimationProps {
   children: ReactNode;
   className?: string;
-  animationType?: "fade-in-up" | "slide-in-left" | "slide-in-right";
+  animationType?: "fade-in-up" | "slide-in-left" | "slide-in-right" | "fade-in-scale" | "slide-in-up" | "bounce-in";
   delay?: number;
+  duration?: number;
 }
 
 const ScrollAnimation = ({ 
   children, 
   className = "", 
   animationType = "fade-in-up",
-  delay = 0 
+  delay = 0,
+  duration = 800
 }: ScrollAnimationProps) => {
   const elementRef = useRef<HTMLDivElement>(null);
 
@@ -27,8 +29,8 @@ const ScrollAnimation = ({
         });
       },
       {
-        threshold: 0.1,
-        rootMargin: "0px 0px -10% 0px",
+        threshold: 0.05, // Trigger earlier for smoother experience
+        rootMargin: "0px 0px -5% 0px", // More generous trigger area
       }
     );
 
@@ -46,7 +48,11 @@ const ScrollAnimation = ({
   return (
     <div
       ref={elementRef}
-      className={`${animationType} ${className}`}
+      className={`scroll-animation ${animationType} ${className}`}
+      style={{
+        animationDuration: `${duration}ms`,
+        animationFillMode: 'both'
+      }}
     >
       {children}
     </div>
