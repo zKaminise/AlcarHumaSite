@@ -12,11 +12,11 @@ const About = () => {
           {/* Content */}
           <div className="space-y-8">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="title-section text-foreground">
+              <h1 className="title-section text-foreground">
                 Mais que uma consultoria, uma{" "}
                 <span className="text-gradient">parceira estratégica</span>{" "}
                 para o seu crescimento.
-              </h2>
+              </h1>
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={200}>
@@ -35,21 +35,21 @@ const About = () => {
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Users className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground">Pessoas</h3>
+                  <h1 className="font-semibold text-foreground">Pessoas</h1>
                   <p className="text-sm text-muted-foreground">Valorizadas</p>
                 </div>
                 <div className="text-center p-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Target className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground">Processos</h3>
+                  <h1 className="font-semibold text-foreground">Processos</h1>
                   <p className="text-sm text-muted-foreground">Inteligentes</p>
                 </div>
                 <div className="text-center p-4">
                   <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
                     <Award className="h-6 w-6 text-primary" />
                   </div>
-                  <h3 className="font-semibold text-foreground">Resultados</h3>
+                  <h1 className="font-semibold text-foreground">Resultados</h1>
                   <p className="text-sm text-muted-foreground">Duradouros</p>
                 </div>
               </div>

@@ -34,10 +34,10 @@ const Ecosystem = () => {
           {/* Content */}
           <div className="space-y-8">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="title-section text-foreground">
+              <h1 className="title-section text-foreground">
                 <span className="text-gradient">Inteligência Coletiva</span>{" "}
                 para o seu Negócio
-              </h2>
+              </h1>
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={200}>
@@ -56,7 +56,7 @@ const Ecosystem = () => {
                     <Lightbulb className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Soluções Personalizadas</h3>
+                    <h1 className="font-semibold text-foreground mb-2">Soluções Personalizadas</h1>
                     <p className="text-muted-foreground">Cada desafio é único e merece uma abordagem específica e inteligente.</p>
                   </div>
                 </div>
@@ -66,7 +66,7 @@ const Ecosystem = () => {
                     <Network className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Rede de Especialistas</h3>
+                    <h1 className="font-semibold text-foreground mb-2">Rede de Especialistas</h1>
                     <p className="text-muted-foreground">Acesso a profissionais de elite em diversas áreas de conhecimento.</p>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Ecosystem = () => {
                     <Users2 className="h-5 w-5 text-primary" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-foreground mb-2">Múltiplas Perspectivas</h3>
+                    <h1 className="font-semibold text-foreground mb-2">Múltiplas Perspectivas</h1>
                     <p className="text-muted-foreground">Análise 360° dos desafios para soluções mais robustas e eficazes.</p>
                   </div>
                 </div>

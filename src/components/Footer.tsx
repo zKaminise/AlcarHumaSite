@@ -12,7 +12,7 @@ const Footer = () => {
                 <span className="text-primary font-bold text-xl">A</span>
               </div>
               <div>
-                <h3 className="text-xl font-bold">Alçar Humà</h3>
+                <h1 className="text-xl font-bold">Alçar Humà</h1>
                 <p className="text-sm text-primary-foreground/70">Consultoria Estratégica</p>
               </div>
             </div>

@@ -59,9 +59,9 @@ const MetodoImpulsionar = () => {
                     <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-card-dark-foreground/20 mb-6">
                       <benefit.icon className="h-8 w-8 text-card-dark-foreground" />
                     </div>
-                    <h3 className="text-xl font-semibold text-card-dark-foreground mb-4">
+                    <h1 className="text-xl font-semibold text-card-dark-foreground mb-4">
                       {benefit.title}
-                    </h3>
+                    </h1>
                     <p className="text-card-dark-foreground-muted leading-relaxed">
                       {benefit.description}
                     </p>

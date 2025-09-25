@@ -22,10 +22,10 @@ const Hero = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={200}>
-              <h2 className="subtitle-main text-muted-foreground max-w-2xl">
+              <p className="subtitle-main text-muted-foreground max-w-2xl">
                 Integramos governança, gestão de riscos e desenvolvimento humano para construir 
                 organizações resilientes, eficientes e preparadas para o futuro.
-              </h2>
+              </p>
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>

@@ -151,7 +151,7 @@ const FaleConosco = () => {
                   <div className="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                     <benefit.icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-bold text-card-dark-foreground mb-2">{benefit.title}</h3>
+                  <h1 className="font-bold text-card-dark-foreground mb-2">{benefit.title}</h1>
                   <p className="text-sm text-card-dark-foreground-muted">{benefit.description}</p>
                 </div>
               ))}
@@ -170,9 +170,9 @@ const FaleConosco = () => {
               <ScrollAnimation>
                 <div className="bg-card-dark p-8 rounded-2xl shadow-2xl">
                   <div className="mb-8">
-                    <h2 className="text-3xl font-bold text-card-dark-foreground mb-4">
+                    <h1 className="text-3xl font-bold text-card-dark-foreground mb-4">
                       Vamos Conversar Sobre Seu Negócio
-                    </h2>
+                    </h1>
                     <p className="text-card-dark-foreground-muted">
                       Preencha o formulário abaixo e nossa equipe entrará em contato para 
                       uma consultoria personalizada e gratuita.
@@ -384,7 +384,7 @@ const FaleConosco = () => {
               <ScrollAnimation>
                 <div className="space-y-6">
                   <div>
-                    <h3 className="text-2xl font-bold mb-4">Informações de Contato</h3>
+                    <h1 className="text-2xl font-bold mb-4">Informações de Contato</h1>
                     <p className="text-muted-foreground mb-8">
                       Estamos aqui para impulsionar o sucesso da sua empresa. 
                       Entre em contato através dos canais abaixo.

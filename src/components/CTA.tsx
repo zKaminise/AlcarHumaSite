@@ -13,10 +13,10 @@ const CTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center max-w-4xl mx-auto">
           <ScrollAnimation animationType="fade-in-up">
-            <h2 className="title-hero text-primary-foreground mb-8">
+            <h1 className="title-hero text-primary-foreground mb-8">
               Vamos construir o futuro do seu{" "}
               <span className="text-auxiliary">negócio juntos?</span>
-            </h2>
+            </h1>
           </ScrollAnimation>
 
           <ScrollAnimation animationType="fade-in-up" delay={200}>

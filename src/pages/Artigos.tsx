@@ -103,9 +103,9 @@ const Artigos = () => {
               </h1>
             </ScrollAnimation>
             <ScrollAnimation delay={200}>
-              <h2 className="subtitle-main text-muted-foreground mb-8">
+              <p className="subtitle-main text-muted-foreground mb-8">
                 Conhecimento prático e tendências de mercado para impulsionar sua carreira e seus negócios.
-              </h2>
+              </p>
             </ScrollAnimation>
             <ScrollAnimation delay={400}>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -120,7 +120,7 @@ const Artigos = () => {
           <div className="max-w-6xl mx-auto">
             <ScrollAnimation>
               <div className="mb-8">
-                <h3 className="text-2xl font-semibold text-foreground mb-4">Navegação Inteligente</h3>
+                <h1 className="text-2xl font-semibold text-foreground mb-4">Navegação Inteligente</h1>
                 <div className="relative mb-6">
                   <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-5 w-5" />
                   <Input
@@ -162,10 +162,10 @@ const Artigos = () => {
         <section className="py-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
             <ScrollAnimation>
-              <h3 className="text-2xl font-semibold text-foreground mb-8">
+              <h1 className="text-2xl font-semibold text-foreground mb-8">
                 {selectedCategory === "Todos" ? "Todos os Artigos" : `Artigos de ${selectedCategory}`}
                 <span className="text-muted-foreground text-lg ml-2">({filteredArticles.length})</span>
-              </h3>
+              </h1>
             </ScrollAnimation>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -203,7 +203,7 @@ const Artigos = () => {
               <ScrollAnimation>
                 <div className="text-center py-12">
                   <BookOpen className="h-16 w-16 text-muted-foreground mx-auto mb-4" />
-                  <h3 className="text-xl font-medium text-foreground mb-2">Nenhum artigo encontrado</h3>
+                  <h1 className="text-xl font-medium text-foreground mb-2">Nenhum artigo encontrado</h1>
                   <p className="text-muted-foreground">
                     Tente ajustar seus filtros ou termos de busca.
                   </p>

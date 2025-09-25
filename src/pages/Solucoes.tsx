@@ -36,15 +36,15 @@ const Solucoes = () => {
               <h1 className="title-section text-foreground mb-6">
                 Gestão de Riscos Psicossociais (NR-1)
               </h1>
-              <h2 className="subtitle-main text-muted-foreground mb-8">
-                Cuidado, Conformidade e Performance
-              </h2>
+              <p className="subtitle-main text-muted-foreground mb-8">
+                Cuidado, Conformidade e Performance.
+              </p>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
                 Vamos além da obrigação legal. Transformamos a gestão de riscos psicossociais 
                 em um pilar para um ambiente de trabalho mais seguro, saudável e produtivo.
               </p>
               <div className="bg-card-dark border border-border/30 rounded-lg p-6 max-w-4xl mx-auto">
-                <h3 className="text-lg font-semibold text-card-dark-foreground mb-2">Para quem é?</h3>
+                <h1 className="text-lg font-semibold text-card-dark-foreground mb-2">Para quem é?</h1>
                 <p className="text-card-dark-foreground-muted">
                   Para líderes, gestores de RH e empresas comprometidas com o bem-estar de suas 
                   equipes e que buscam se adequar proativamente às novas diretrizes da NR-1.
@@ -56,9 +56,9 @@ const Solucoes = () => {
           {/* Nossa Abordagem */}
           <ScrollAnimation delay={200}>
             <div className="mb-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
                 Nossa Abordagem
-              </h3>
+              </h1>
               <div className="grid md:grid-cols-2 gap-6">
                 {[
                   {
@@ -107,9 +107,9 @@ const Solucoes = () => {
           {/* Benefícios NR-1 */}
           <ScrollAnimation delay={400}>
             <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
                 Benefícios
-              </h3>
+              </h1>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   { icon: CheckCircle, title: "Conformidade total\ncom a NR-1", color: "text-green-500" },
@@ -152,15 +152,15 @@ const Solucoes = () => {
               <h1 className="title-section text-foreground mb-6">
                 Governança, Riscos e Conformidade (GRC)
               </h1>
-              <h2 className="subtitle-main text-muted-foreground mb-8">
-                Estrutura Sólida para Decisões Inteligentes
-              </h2>
+              <p className="subtitle-main text-muted-foreground mb-8">
+                Estrutura Sólida para Decisões Inteligentes.
+              </p>
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed mb-8">
                 Construímos os alicerces para que sua empresa cresça de forma segura, 
                 eficiente e transparente.
               </p>
               <div className="bg-card-dark border border-border/30 rounded-lg p-6 max-w-4xl mx-auto">
-                <h3 className="text-lg font-semibold text-card-dark-foreground mb-2">Para quem é?</h3>
+                <h1 className="text-lg font-semibold text-card-dark-foreground mb-2">Para quem é?</h1>
                 <p className="text-card-dark-foreground-muted">
                   Para empresas em crescimento que precisam organizar processos, mitigar riscos, 
                   garantir a conformidade (incluindo LGPD) e preparar a organização para o próximo 
@@ -173,9 +173,9 @@ const Solucoes = () => {
           {/* Nossa Abordagem Integrada */}
           <ScrollAnimation delay={200}>
             <div className="mb-16">
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
                 Nossa Abordagem Integrada
-              </h3>
+              </h1>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   {
@@ -221,9 +221,9 @@ const Solucoes = () => {
           {/* Benefícios GRC */}
           <ScrollAnimation delay={400}>
             <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
+              <h1 className="text-2xl md:text-3xl font-bold text-foreground mb-8 text-center">
                 Benefícios
-              </h3>
+              </h1>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
                   { icon: Scale, title: "Maior segurança jurídica\ne operacional", color: "text-blue-500" },

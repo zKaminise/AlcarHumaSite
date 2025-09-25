@@ -41,10 +41,10 @@ const Parceiros = () => {
             <h1 className="title-hero text-foreground mb-6">
               <span className="text-gradient">Nosso Ecossistema de Especialistas</span>
             </h1>
-            <h2 className="subtitle-main text-muted-foreground mb-8 max-w-4xl mx-auto">
+            <p className="subtitle-main text-muted-foreground mb-8 max-w-4xl mx-auto">
               Acreditamos no poder da colaboração. Unimos os melhores talentos de diversas áreas 
               para entregar a solução mais completa e precisa para o seu desafio.
-            </h2>
+            </p>
           </ScrollAnimation>
         </div>
       </section>
@@ -79,11 +79,11 @@ const Parceiros = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <Users className="w-16 h-16 mx-auto text-primary mb-6" />
-              <h2 className="title-section text-foreground mb-6">
+              <h1 className="title-section text-foreground mb-6">
                 Nossos Parceiros
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-                Conheça os profissionais que compõem nossa rede de excelência
+              </h1>
+              <p className="subtitle-main text-muted-foreground max-w-3xl mx-auto">
+                Conheça os profissionais que compõem nossa rede de excelência.
               </p>
             </div>
           </ScrollAnimation>
@@ -102,9 +102,9 @@ const Parceiros = () => {
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <h3 className="text-xl font-semibold text-card-dark-foreground mb-2">
+                        <h1 className="text-xl font-semibold text-card-dark-foreground mb-2">
                           {parceiro.nome}
-                        </h3>
+                        </h1>
                         <p className="text-card-dark-foreground font-medium mb-3">
                           {parceiro.especialidade}
                         </p>
@@ -152,9 +152,9 @@ const Parceiros = () => {
           <ScrollAnimation>
             <div className="text-center mb-12">
               <Network className="w-16 h-16 mx-auto text-primary mb-6" />
-              <h2 className="title-section text-foreground mb-8">
+              <h1 className="title-section text-foreground mb-8">
                 Inteligência Coletiva a Serviço do Seu Negócio
-              </h2>
+              </h1>
             </div>
           </ScrollAnimation>
 

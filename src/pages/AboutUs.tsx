@@ -72,11 +72,11 @@ const AboutUs = () => {
           {/* Section Header */}
           <div className="text-center mb-16">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="title-section text-foreground mb-6">
+              <h1 className="title-section text-foreground mb-6">
                 O que nos <span className="text-gradient">Define</span>
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                Nossos pilares fundamentais que orientam cada decisão e projeto
+              </h1>
+              <p className="subtitle-main text-muted-foreground max-w-3xl mx-auto">
+                Nossos pilares fundamentais que orientam cada decisão e projeto.
               </p>
             </ScrollAnimation>
           </div>
@@ -109,7 +109,7 @@ const AboutUs = () => {
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center">
                         <Target className="h-6 w-6 text-primary-foreground" />
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground">Propósito</h3>
+                      <h1 className="text-2xl font-bold text-foreground">Propósito</h1>
                     </div>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       Descomplicar a gestão e potencializar pessoas, transformando desafios em 
@@ -128,7 +128,7 @@ const AboutUs = () => {
                       <div className="w-12 h-12 bg-gradient-to-br from-auxiliary to-primary rounded-xl flex items-center justify-center">
                         <Target className="h-6 w-6 text-auxiliary-foreground" />
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground">Missão</h3>
+                      <h1 className="text-2xl font-bold text-foreground">Missão</h1>
                     </div>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       Oferecer soluções integradas de gestão, governança e desenvolvimento humano, 
@@ -147,7 +147,7 @@ const AboutUs = () => {
                       <div className="w-12 h-12 bg-gradient-to-br from-secondary to-auxiliary rounded-xl flex items-center justify-center">
                         <Eye className="h-6 w-6 text-secondary-foreground" />
                       </div>
-                      <h3 className="text-2xl font-bold text-foreground">Visão</h3>
+                      <h1 className="text-2xl font-bold text-foreground">Visão</h1>
                     </div>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       Ser referência como parceira estratégica no desenvolvimento e estruturação de 
@@ -167,9 +167,9 @@ const AboutUs = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <ScrollAnimation animationType="fade-in-up">
-              <h2 className="title-section text-foreground mb-6">
+              <h1 className="title-section text-foreground mb-6">
                 Nossos <span className="text-gradient">Valores</span>
-              </h2>
+              </h1>
             </ScrollAnimation>
           </div>
 
@@ -222,10 +222,10 @@ const AboutUs = () => {
             {/* Content */}
             <div className="space-y-8">
               <ScrollAnimation animationType="fade-in-up">
-                <h2 className="title-section text-foreground">
+                <h1 className="title-section text-foreground">
                   Mais que uma consultoria, uma{" "}
                   <span className="text-gradient">rede de inteligência.</span>
-                </h2>
+                </h1>
               </ScrollAnimation>
 
               <ScrollAnimation animationType="fade-in-up" delay={200}>

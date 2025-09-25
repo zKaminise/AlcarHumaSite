@@ -36,10 +36,10 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <ScrollAnimation animationType="fade-in-up">
-            <h2 className="title-section text-foreground mb-6">
+            <h1 className="title-section text-foreground mb-6">
               Soluções Estratégicas para um{" "}
               <span className="text-gradient">Crescimento Sustentável</span>
-            </h2>
+            </h1>
           </ScrollAnimation>
           
           <ScrollAnimation animationType="fade-in-up" delay={200}>
