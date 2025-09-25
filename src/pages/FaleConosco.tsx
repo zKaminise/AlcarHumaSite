@@ -142,17 +142,51 @@ const FaleConosco = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-10 bg-muted/30">
+      <section className="py-16 bg-gradient-to-br from-muted/20 via-background to-auxiliary/10">
         <div className="container mx-auto px-4">
           <ScrollAnimation>
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="text-center mb-12">
+              <h1 className="title-section text-foreground mb-4">
+                Por que escolher a <span className="text-gradient">Alçar Humà?</span>
+              </h1>
+              <p className="subtitle-main text-muted-foreground max-w-2xl mx-auto">
+                Mais que uma consultoria, uma parceria estratégica para o seu sucesso.
+              </p>
+            </div>
+          </ScrollAnimation>
+          
+          <ScrollAnimation delay={200}>
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, index) => (
-                <div key={index} className="bg-card-dark p-6 rounded-xl text-center hover:scale-105 transition-transform duration-300">
-                  <div className="bg-primary/20 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <benefit.icon className="h-8 w-8 text-primary" />
+                <div 
+                  key={index} 
+                  className="group relative bg-card-dark backdrop-blur-sm p-8 rounded-2xl border border-border/30 hover:border-primary/40 transition-all duration-500 card-floating card-glow overflow-hidden"
+                >
+                  {/* Gradient background overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                  
+                  {/* Icon container with enhanced design */}
+                  <div className="relative z-10 mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-inner">
+                        <benefit.icon className="h-8 w-8 text-white drop-shadow-sm" />
+                      </div>
+                    </div>
                   </div>
-                  <h1 className="font-bold text-card-dark-foreground mb-2">{benefit.title}</h1>
-                  <p className="text-sm text-card-dark-foreground-muted">{benefit.description}</p>
+                  
+                  {/* Content */}
+                  <div className="relative z-10 text-center">
+                    <h1 className="text-xl font-bold text-card-dark-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                      {benefit.title}
+                    </h1>
+                    <p className="text-card-dark-foreground-muted leading-relaxed group-hover:text-card-dark-foreground transition-colors duration-300">
+                      {benefit.description}
+                    </p>
+                  </div>
+                  
+                  {/* Decorative elements */}
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-full -translate-y-12 translate-x-12 group-hover:scale-150 transition-transform duration-700"></div>
+                  <div className="absolute bottom-0 left-0 w-16 h-16 bg-gradient-to-tr from-secondary/10 to-transparent rounded-full translate-y-8 -translate-x-8 group-hover:scale-125 transition-transform duration-700"></div>
                 </div>
               ))}
             </div>
