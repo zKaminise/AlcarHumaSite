@@ -162,22 +162,8 @@ const Parceiros = () => {
             <div className="max-w-4xl mx-auto">
               <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30">
                 <CardContent className="p-8">
-                  <p className="text-lg text-card-dark-foreground-muted leading-relaxed mb-6">
-                    Entendemos que gerenciar múltiplos fornecedores e especialistas pode ser um 
-                    desafio para qualquer empresa, especialmente para pequenas e médias. Por isso, 
-                    na Alçar Humà, simplificamos esse processo para você.
-                  </p>
-                  <p className="text-lg text-card-dark-foreground-muted leading-relaxed mb-6">
-                    Nós atuamos como seu único ponto de contato, realizando a curadoria, a gestão 
-                    e a integração de todos os especialistas necessários para o seu projeto. Isso 
-                    significa que você se beneficia da mais alta expertise em diversas áreas, sem 
-                    a complexidade operacional.
-                  </p>
                   <p className="text-lg text-card-dark-foreground-muted leading-relaxed">
-                    Nosso papel é garantir que todas as pontas se conectem, que a comunicação seja 
-                    fluida e que o resultado final seja uma solução coesa, alinhada aos seus objetivos 
-                    e entregue com a excelência que sua empresa merece. Sua jornada conosco é clara, 
-                    eficiente e focada em resultados.
+                    Entendemos que gerenciar múltiplos fornecedores e especialistas pode ser um desafio para qualquer empresa, especialmente para pequenas e médias. Por isso, na Alçar Humà, simplificamos esse processo para você. Nosso papel é garantir que todas as pontas se conectem, que a comunicação seja fluida e que o resultado final seja uma solução coesa, alinhada aos seus objetivos e entregue com a excelência que sua empresa merece. Sua jornada conosco é clara, eficiente e focada em resultados.
                   </p>
                 </CardContent>
               </Card>
