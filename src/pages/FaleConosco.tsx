@@ -160,15 +160,15 @@ const FaleConosco = () => {
               {benefits.map((benefit, index) => (
                 <div 
                   key={index} 
-                  className="group relative bg-card-dark backdrop-blur-sm p-8 rounded-2xl border border-border/30 hover:border-primary/40 transition-all duration-500 card-floating card-glow overflow-hidden"
+                  className="group relative bg-card-dark backdrop-blur-sm p-8 rounded-2xl border border-border/30 hover:border-primary/40 transition-all duration-500 card-floating card-glow overflow-hidden hover:bg-card-dark/90"
                 >
                   {/* Gradient background overlay */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
                   
                   {/* Icon container with enhanced design */}
                   <div className="relative z-10 mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg">
-                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-inner">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary/20 to-primary/10 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-primary/20">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-inner group-hover:shadow-lg">
                         <benefit.icon className="h-8 w-8 text-white drop-shadow-sm" />
                       </div>
                     </div>
@@ -176,7 +176,7 @@ const FaleConosco = () => {
                   
                   {/* Content */}
                   <div className="relative z-10 text-center">
-                    <h1 className="text-xl font-bold text-card-dark-foreground mb-3 group-hover:text-primary transition-colors duration-300">
+                    <h1 className="text-xl font-bold text-card-dark-foreground mb-3 transition-colors duration-300">
                       {benefit.title}
                     </h1>
                     <p className="text-card-dark-foreground-muted leading-relaxed group-hover:text-card-dark-foreground transition-colors duration-300">
