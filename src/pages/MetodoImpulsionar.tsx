@@ -79,7 +79,10 @@ const MetodoImpulsionar = () => {
               <Button 
                 size="lg"
                 className="btn-hero text-lg px-8 py-4 h-auto"
-                onClick={() => navigate("/contato")}
+                onClick={() => {
+                  navigate("/fale-conosco");
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}
               >
                 Quero Impulsionar Minha Carreira
                 <ArrowRight className="ml-2 h-5 w-5" />
