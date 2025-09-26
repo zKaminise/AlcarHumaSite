@@ -1,9 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Network, Lightbulb, Users2 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import ecosystemImage from "@/assets/ecosystem-image.jpg";
 import ScrollAnimation from "./ScrollAnimation";
 
 const Ecosystem = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="ecossistema" className="py-12 bg-gradient-to-br from-auxiliary/20 to-muted/40">
       <div className="container mx-auto px-4">
@@ -84,7 +87,7 @@ const Ecosystem = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>
-              <Button className="btn-hero group">
+              <Button className="btn-hero group" onClick={() => navigate("/solucoes")}>
                 Conheça nosso Ecossistema
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>

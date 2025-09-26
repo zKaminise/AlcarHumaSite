@@ -1,32 +1,46 @@
 import { Shield, Building, UserCheck, Presentation } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import ScrollAnimation from "./ScrollAnimation";
 import ServiceCard from "./ServiceCard";
 
 const Services = () => {
+  const navigate = useNavigate();
+
+  const handleServiceClick = (serviceType: string) => {
+    if (serviceType === "nr1" || serviceType === "grc") {
+      navigate("/solucoes", { state: { scrollTo: serviceType } });
+    } else {
+      navigate("/metodo-impulsionar");
+    }
+  };
   const services = [
     {
       icon: Shield,
       title: "Gestão de Riscos Psicossociais (NR-1)",
       description: "Transforme a conformidade com a NR-1 em uma vantagem competitiva. Mapeamos riscos, desenvolvemos planos de ação e promovemos uma cultura de segurança psicológica e bem-estar.",
-      buttonText: "Saiba Mais"
+      buttonText: "Saiba Mais",
+      type: "nr1"
     },
     {
       icon: Building,
       title: "Governança, Riscos e Conformidade (GRC)",
       description: "Fortaleça as bases do seu negócio. Implementamos estruturas de governança robustas, gerenciamos riscos e garantimos a conformidade para proteger e otimizar toda sua operação.",
-      buttonText: "Saiba Mais"
+      buttonText: "Saiba Mais",
+      type: "grc"
     },
     {
       icon: UserCheck,
       title: "Mentorias de Carreira e Negócios",
       description: "Impulsione seu potencial máximo. Oferecemos mentoria individual para profissionais que buscam clareza e crescimento na carreira, e para empreendedores que desejam estruturar e escalar seus negócios.",
-      buttonText: "Conheça as Mentorias"
+      buttonText: "Conheça as Mentorias",
+      type: "mentoria"
     },
     {
       icon: Presentation,
       title: "Palestras &\nWorkshops",
       description: "Nossas palestras e workshops levam conteúdo prático e relevante que inspira a ação, a equipes e a lideranças sobre temas como liderança humanizada, comunicação, cultura e tendências de mercado.",
-      buttonText: "Ver Temas de Palestras"
+      buttonText: "Ver Temas de Palestras",
+      type: "workshop"
     }
   ];
 
@@ -68,7 +82,7 @@ const Services = () => {
                 description={service.description}
                 buttonText={service.buttonText}
                 delay={index * 100 + 100}
-                onClick={() => console.log(`Navigate to ${service.title}`)}
+                onClick={() => handleServiceClick(service.type)}
               />
             </div>
           ))}

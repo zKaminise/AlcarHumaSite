@@ -1,10 +1,13 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Target, Award } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import integrationImage from "@/assets/integration-image.jpg";
 import founderImage from "@/assets/founder-image.jpg";
 import ScrollAnimation from "./ScrollAnimation";
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="sobre" className="py-12 bg-muted/30">
       <div className="container mx-auto px-4">
@@ -56,7 +59,7 @@ const About = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>
-              <Button className="btn-hero group">
+              <Button className="btn-hero group" onClick={() => navigate("/sobre-nos")}>
                 Nossa História e Propósito
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>

@@ -1,13 +1,27 @@
+import React from "react";
 import { CheckCircle, Target, TrendingDown, Zap, Shield, Scale, BarChart3, Cog, Lock, Sprout, Handshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 const Solucoes = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+
+  React.useEffect(() => {
+    if (location.state?.scrollTo) {
+      const targetId = location.state.scrollTo;
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
+  }, [location.state]);
 
   return (
     <div className="min-h-screen bg-background">

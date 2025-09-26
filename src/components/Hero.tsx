@@ -1,9 +1,12 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import heroImage from "@/assets/hero-image.jpg";
 import ScrollAnimation from "./ScrollAnimation";
 
 const Hero = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Background gradient */}
@@ -30,11 +33,11 @@ const Hero = () => {
 
             <ScrollAnimation animationType="slide-in-up" delay={400} duration={1000}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button className="btn-hero group">
+                <Button className="btn-hero group" onClick={() => navigate("/metodo-impulsionar")}>
                   Descubra o Método Impulsionar
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
-                <Button className="btn-hero-secondary group">
+                <Button className="btn-hero-secondary group" onClick={() => navigate("/solucoes")}>
                   Conheça Nossas Soluções
                   <Play className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
                 </Button>
