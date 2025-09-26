@@ -240,7 +240,10 @@ const AboutUs = () => {
               </ScrollAnimation>
 
               <ScrollAnimation animationType="fade-in-up" delay={400}>
-                <Button className="btn-hero group">
+                <Button 
+                  className="btn-hero group"
+                  onClick={() => window.open("https://linkedin.com/in/gabrielkaminise", "_blank")}
+                >
                   <Linkedin className="mr-3 h-5 w-5" />
                   Conecte-se conosco no LinkedIn
                 </Button>

@@ -175,7 +175,10 @@ const Parceiros = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
-                onClick={() => navigate('/sobre-nos')}
+                onClick={() => {
+                  navigate('/fale-conosco');
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}
               >
                 Fale com um Especialista
               </Button>

@@ -43,7 +43,7 @@ const Solucoes = () => {
       </section>
 
       {/* Gestão de Riscos Psicossociais Section */}
-      <section className="py-12 px-4 bg-gradient-to-br from-muted/5 to-background">
+      <section id="nr1" className="py-12 px-4 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
@@ -149,7 +149,10 @@ const Solucoes = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
-                onClick={() => navigate('/sobre-nos')}
+                onClick={() => {
+                  navigate('/fale-conosco');
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}
               >
                 Solicite um Diagnóstico para sua Empresa
               </Button>
@@ -159,7 +162,7 @@ const Solucoes = () => {
       </section>
 
       {/* GRC Section */}
-      <section className="py-12 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section id="grc" className="py-12 px-4 bg-gradient-to-br from-background to-muted/20">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
@@ -263,7 +266,10 @@ const Solucoes = () => {
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
-                onClick={() => navigate('/sobre-nos')}
+                onClick={() => {
+                  navigate('/fale-conosco');
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}
               >
                 Agende uma Avaliação de Maturidade em GRC
               </Button>

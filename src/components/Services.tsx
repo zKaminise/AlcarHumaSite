@@ -7,10 +7,13 @@ const Services = () => {
   const navigate = useNavigate();
 
   const handleServiceClick = (serviceType: string) => {
-    if (serviceType === "nr1" || serviceType === "grc") {
-      navigate("/solucoes", { state: { scrollTo: serviceType } });
+    if (serviceType === "nr1") {
+      navigate("/solucoes", { state: { scrollTo: "nr1" } });
+    } else if (serviceType === "grc") {
+      navigate("/solucoes", { state: { scrollTo: "grc" } });
     } else {
       navigate("/metodo-impulsionar");
+      setTimeout(() => window.scrollTo(0, 0), 100);
     }
   };
   const services = [

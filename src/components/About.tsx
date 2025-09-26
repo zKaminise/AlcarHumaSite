@@ -59,7 +59,10 @@ const About = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>
-              <Button className="btn-hero group" onClick={() => navigate("/sobre-nos")}>
+              <Button className="btn-hero group" onClick={() => {
+                navigate("/sobre-nos");
+                setTimeout(() => window.scrollTo(0, 0), 100);
+              }}>
                 Nossa História e Propósito
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>

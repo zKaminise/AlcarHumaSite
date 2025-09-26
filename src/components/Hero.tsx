@@ -33,11 +33,17 @@ const Hero = () => {
 
             <ScrollAnimation animationType="slide-in-up" delay={400} duration={1000}>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button className="btn-hero group" onClick={() => navigate("/metodo-impulsionar")}>
+                <Button className="btn-hero group" onClick={() => {
+                  navigate("/metodo-impulsionar");
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}>
                   Descubra o Método Impulsionar
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
-                <Button className="btn-hero-secondary group" onClick={() => navigate("/solucoes")}>
+                <Button className="btn-hero-secondary group" onClick={() => {
+                  navigate("/solucoes");
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}>
                   Conheça Nossas Soluções
                   <Play className="ml-2 h-4 w-4 group-hover:scale-110 transition-transform duration-300" />
                 </Button>

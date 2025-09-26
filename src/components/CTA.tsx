@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Mail, Calendar } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import ScrollAnimation from "./ScrollAnimation";
 
 const CTA = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="contato" className="py-12 bg-gradient-to-br from-primary to-secondary relative overflow-hidden">
       {/* Background decoration */}
@@ -32,6 +35,10 @@ const CTA = () => {
               <Button 
                 size="lg"
                 className="bg-white text-primary hover:bg-white/90 text-xl px-12 py-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+                onClick={() => {
+                  navigate("/fale-conosco");
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}
               >
                 <Calendar className="mr-4 h-7 w-7" />
                 Fale com um Especialista
