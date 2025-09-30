@@ -22,8 +22,9 @@ const PalestrasWorkshops = () => {
       <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation animationType="fade-in-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 text-center leading-tight">
-              Palestras e Workshops que Transformam Equipes e Fortalecem Negócios
+            <h1 className="title-hero mb-6 text-center">
+              Palestras e Workshops que <span className="text-gradient">Transformam Equipes</span> e Fortalecem{" "}
+              <span className="text-gradient">Negócios</span>
             </h1>
           </ScrollAnimation>
           
