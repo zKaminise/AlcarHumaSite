@@ -1,13 +1,31 @@
-import { Linkedin, Target, Eye, Heart, Award, Users2, Shield } from "lucide-react";
+import { Target, Eye, Heart, Award, Users2, Shield, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
+import { useNavigate } from "react-router-dom";
 import teamImage from "@/assets/team-collaboration.jpg";
 import missionVisionImage from "@/assets/mission-vision-hero.jpg";
 
 const AboutUs = () => {
+  const navigate = useNavigate();
+  
+  const approach = [
+    {
+      title: "Diagnóstico Preciso",
+      description: "Analisamos profundamente a cultura e os processos da sua empresa para identificar a raiz dos desafios."
+    },
+    {
+      title: "Estratégia Personalizada",
+      description: "Não acreditamos em fórmulas prontas. Desenvolvemos um plano de ação exclusivo, alinhado aos seus objetivos de negócio e à sua realidade."
+    },
+    {
+      title: "Implementação e Acompanhamento",
+      description: "Atuamos lado a lado com sua equipe para garantir que a estratégia se transforme em resultados concretos e sustentáveis."
+    }
+  ];
+
   const values = [
     {
       icon: Award,
@@ -61,6 +79,37 @@ const AboutUs = () => {
                 Entenda o que nos move, nossa filosofia de trabalho e os valores que guiam cada projeto que assumimos.
               </p>
             </ScrollAnimation>
+          </div>
+        </div>
+      </section>
+
+      {/* Nossa Abordagem Section */}
+      <section className="py-12 bg-muted/20">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <ScrollAnimation animationType="fade-in-up">
+              <h2 className="title-section text-foreground mb-6">
+                Nossa <span className="text-gradient">Abordagem</span>
+              </h2>
+            </ScrollAnimation>
+          </div>
+
+          <div className="max-w-4xl mx-auto space-y-6">
+            {approach.map((item, index) => (
+              <ScrollAnimation key={item.title} animationType="fade-in-up" delay={index * 100}>
+                <div className="flex gap-4 p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300">
+                  <div className="flex-shrink-0">
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center">
+                      <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{item.description}</p>
+                  </div>
+                </div>
+              </ScrollAnimation>
+            ))}
           </div>
         </div>
       </section>
@@ -241,10 +290,10 @@ const AboutUs = () => {
               <ScrollAnimation animationType="fade-in-up" delay={400}>
                 <Button 
                   className="btn-hero group"
-                  onClick={() => window.open("https://linkedin.com/in/gabrielkaminise", "_blank")}
+                  onClick={() => navigate('/parceiros')}
                 >
-                  <Linkedin className="mr-3 h-5 w-5" />
-                  Conecte-se conosco no LinkedIn
+                  <Users2 className="mr-3 h-5 w-5" />
+                  Conheça nossos parceiros
                 </Button>
               </ScrollAnimation>
             </div>
