@@ -64,15 +64,39 @@ const FaleConosco = () => {
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       toast({
-        title: "✅ Mensagem enviada com sucesso!",
-        description: "Nossa equipe entrará em contato em até 24h. Prepare-se para impulsionar seus resultados!",
+        title: `Obrigada, ${data.nome}!`,
+        description: (
+          <div className="space-y-3">
+            <p>Recebemos sua aplicação. Nossa equipe entrará em contato com você pelo WhatsApp em até 48 horas úteis para agendar sua sessão de alinhamento.</p>
+            <p className="font-semibold">Enquanto isso, que tal se conectar conosco em nossas redes?</p>
+            <div className="flex flex-col gap-2">
+              <a 
+                href="https://www.linkedin.com/company/alçar-humà-gestão-e-pessoas/?viewAsMember=true" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm"
+              >
+                🔗 LinkedIn
+              </a>
+              <a 
+                href="https://www.instagram.com/alcarhumagp/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-primary hover:underline text-sm"
+              >
+                📸 Instagram
+              </a>
+            </div>
+          </div>
+        ),
+        duration: 10000,
       });
       
       form.reset();
     } catch (error) {
       toast({
         title: "❌ Erro ao enviar",
-        description: "Tente novamente ou entre em contato por WhatsApp: (11) 99999-9999",
+        description: "Tente novamente ou entre em contato por WhatsApp: (67) 99644-2404",
         variant: "destructive",
       });
     } finally {
