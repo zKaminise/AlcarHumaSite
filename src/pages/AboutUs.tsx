@@ -290,7 +290,10 @@ const AboutUs = () => {
               <ScrollAnimation animationType="fade-in-up" delay={400}>
                 <Button 
                   className="btn-hero group"
-                  onClick={() => navigate('/parceiros')}
+                  onClick={() => {
+                    navigate('/parceiros');
+                    window.scrollTo(0, 0);
+                  }}
                 >
                   <Users2 className="mr-3 h-5 w-5" />
                   Conheça nossos parceiros
