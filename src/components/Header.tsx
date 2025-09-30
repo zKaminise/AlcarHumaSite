@@ -40,6 +40,7 @@ const Header = () => {
     { name: "Nosso Propósito", href: "/sobre-nos" },
     { name: "Nossas Soluções", href: "/solucoes" },
     { name: "Método Impulsionar", href: "/metodo-impulsionar" },
+    { name: "Palestras & Workshops", href: "/palestras-workshops" },
     { name: "Parceiros", href: "/parceiros" },
     { name: "Artigos & Insights", href: "/artigos" },
   ];
