@@ -5,6 +5,7 @@ import * as z from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { Checkbox } from "@/components/ui/checkbox";
 import {
   Form,
   FormControl,
@@ -20,6 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
+import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
@@ -30,11 +32,11 @@ const formSchema = z.object({
   nome: z.string().min(2, "Nome deve ter pelo menos 2 caracteres"),
   email: z.string().email("Email inválido"),
   telefone: z.string().min(10, "Telefone deve ter pelo menos 10 dígitos"),
-  empresa: z.string().min(2, "Nome da empresa é obrigatório"),
-  cargo: z.string().min(2, "Cargo é obrigatório"),
   assunto: z.string().min(1, "Selecione um assunto"),
-  desafio: z.string().min(1, "Selecione o principal desafio"),
   mensagem: z.string().min(10, "Mensagem deve ter pelo menos 10 caracteres"),
+  consentimento: z.boolean().refine(val => val === true, {
+    message: "Você deve concordar com a Política de Privacidade",
+  }),
 });
 
 type FormData = z.infer<typeof formSchema>;
@@ -49,11 +51,9 @@ const FaleConosco = () => {
       nome: "",
       email: "",
       telefone: "",
-      empresa: "",
-      cargo: "",
       assunto: "",
-      desafio: "",
       mensagem: "",
+      consentimento: false,
     },
   });
 
@@ -213,94 +213,17 @@ const FaleConosco = () => {
                     </p>
                   </div>
                   
-                  <Form {...form}>
+                   <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <FormField
-                          control={form.control}
-                          name="nome"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-card-dark-foreground font-medium">Nome Completo *</FormLabel>
-                              <FormControl>
-                                <Input 
-                                  placeholder="Digite seu nome completo"
-                                  className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
-                                  {...field} 
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-
-                        <FormField
-                          control={form.control}
-                          name="email"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-card-dark-foreground font-medium">Email Corporativo *</FormLabel>
-                              <FormControl>
-                                <Input 
-                                  type="email"
-                                  placeholder="seu.email@empresa.com"
-                                  className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
-                                  {...field} 
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                      </div>
-
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <FormField
-                          control={form.control}
-                          name="telefone"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-card-dark-foreground font-medium">WhatsApp/Telefone *</FormLabel>
-                              <FormControl>
-                                <Input 
-                                  placeholder="(11) 99999-9999"
-                                  className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
-                                  {...field} 
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-
-                        <FormField
-                          control={form.control}
-                          name="cargo"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-card-dark-foreground font-medium">Seu Cargo *</FormLabel>
-                              <FormControl>
-                                <Input 
-                                  placeholder="Ex: CEO, Diretor, Gerente..."
-                                  className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
-                                  {...field} 
-                                />
-                              </FormControl>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                      </div>
-
                       <FormField
                         control={form.control}
-                        name="empresa"
+                        name="nome"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-card-dark-foreground font-medium">Nome da Empresa *</FormLabel>
+                            <FormLabel className="text-card-dark-foreground font-medium">Nome Completo *</FormLabel>
                             <FormControl>
                               <Input 
-                                placeholder="Digite o nome da sua empresa"
+                                placeholder="Digite seu nome completo"
                                 className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
                                 {...field} 
                               />
@@ -310,73 +233,75 @@ const FaleConosco = () => {
                         )}
                       />
 
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <FormField
-                          control={form.control}
-                          name="assunto"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-card-dark-foreground font-medium">Área de Interesse *</FormLabel>
-                              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                  <SelectTrigger className="bg-background/10 border-background/20 text-card-dark-foreground h-12 rounded-lg">
-                                    <SelectValue placeholder="Selecione uma área" />
-                                  </SelectTrigger>
-                                </FormControl>
-                                <SelectContent>
-                                  <SelectItem value="consultoria">Consultoria Empresarial</SelectItem>
-                                  <SelectItem value="lideranca">Desenvolvimento de Liderança</SelectItem>
-                                  <SelectItem value="equipes">Desenvolvimento de Equipes</SelectItem>
-                                  <SelectItem value="coaching">Coaching Executivo</SelectItem>
-                                  <SelectItem value="mentoria">Mentoria Empresarial</SelectItem>
-                                  <SelectItem value="treinamento">Treinamentos Corporativos</SelectItem>
-                                  <SelectItem value="palestra">Palestras Motivacionais</SelectItem>
-                                  <SelectItem value="outros">Outros Serviços</SelectItem>
-                                </SelectContent>
-                              </Select>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
+                      <FormField
+                        control={form.control}
+                        name="email"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-card-dark-foreground font-medium">E-mail *</FormLabel>
+                            <FormControl>
+                              <Input 
+                                type="email"
+                                placeholder="seu.email@exemplo.com"
+                                className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
 
-                        <FormField
-                          control={form.control}
-                          name="desafio"
-                          render={({ field }) => (
-                            <FormItem>
-                              <FormLabel className="text-card-dark-foreground font-medium">Principal Desafio *</FormLabel>
-                              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                                <FormControl>
-                                  <SelectTrigger className="bg-background/10 border-background/20 text-card-dark-foreground h-12 rounded-lg">
-                                    <SelectValue placeholder="Qual seu maior desafio?" />
-                                  </SelectTrigger>
-                                </FormControl>
-                                <SelectContent>
-                                  <SelectItem value="crescimento">Crescimento da Empresa</SelectItem>
-                                  <SelectItem value="vendas">Aumento de Vendas</SelectItem>
-                                  <SelectItem value="produtividade">Produtividade da Equipe</SelectItem>
-                                  <SelectItem value="lideranca">Desenvolvimento de Liderança</SelectItem>
-                                  <SelectItem value="comunicacao">Comunicação Interna</SelectItem>
-                                  <SelectItem value="motivacao">Motivação dos Colaboradores</SelectItem>
-                                  <SelectItem value="processos">Otimização de Processos</SelectItem>
-                                  <SelectItem value="outros">Outros</SelectItem>
-                                </SelectContent>
-                              </Select>
-                              <FormMessage />
-                            </FormItem>
-                          )}
-                        />
-                      </div>
+                      <FormField
+                        control={form.control}
+                        name="telefone"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-card-dark-foreground font-medium">Telefone/WhatsApp *</FormLabel>
+                            <FormControl>
+                              <Input 
+                                placeholder="(11) 99999-9999"
+                                className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted h-12 rounded-lg"
+                                {...field} 
+                              />
+                            </FormControl>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
+
+                      <FormField
+                        control={form.control}
+                        name="assunto"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel className="text-card-dark-foreground font-medium">Assunto *</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger className="bg-background/10 border-background/20 text-card-dark-foreground h-12 rounded-lg">
+                                  <SelectValue placeholder="Selecione um assunto" />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                <SelectItem value="duvidas">Dúvidas Gerais</SelectItem>
+                                <SelectItem value="parceria">Propostas de Parceria</SelectItem>
+                                <SelectItem value="outros">Outros Assuntos</SelectItem>
+                              </SelectContent>
+                            </Select>
+                            <FormMessage />
+                          </FormItem>
+                        )}
+                      />
 
                       <FormField
                         control={form.control}
                         name="mensagem"
                         render={({ field }) => (
                           <FormItem>
-                            <FormLabel className="text-card-dark-foreground font-medium">Conte-nos Mais Sobre Seu Desafio *</FormLabel>
+                            <FormLabel className="text-card-dark-foreground font-medium">Como podemos ajudar? *</FormLabel>
                             <FormControl>
                               <Textarea 
-                                placeholder="Descreva sua situação atual, objetivos e como podemos ajudar sua empresa a alcançar melhores resultados..."
+                                placeholder="Descreva sua situação atual, objetivos e como podemos ajudar..."
                                 className="bg-background/10 border-background/20 text-card-dark-foreground placeholder:text-card-dark-foreground-muted min-h-[120px] rounded-lg"
                                 {...field} 
                               />
@@ -386,7 +311,37 @@ const FaleConosco = () => {
                         )}
                       />
 
-                      <Button 
+                      <FormField
+                        control={form.control}
+                        name="consentimento"
+                        render={({ field }) => (
+                          <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                            <FormControl>
+                              <Checkbox 
+                                checked={field.value}
+                                onCheckedChange={field.onChange}
+                                className="mt-1"
+                              />
+                            </FormControl>
+                            <div className="space-y-1 leading-none">
+                              <FormLabel className="text-sm text-card-dark-foreground font-normal">
+                                Li e concordo com a{" "}
+                                <Link 
+                                  to="/politica-privacidade" 
+                                  className="text-primary hover:text-primary/80 underline font-medium"
+                                  target="_blank"
+                                >
+                                  Política de Privacidade
+                                </Link>
+                                {" "}e autorizo o contato da Alçar Humà para tratar da minha solicitação. *
+                              </FormLabel>
+                              <FormMessage />
+                            </div>
+                          </FormItem>
+                        )}
+                      />
+
+                      <Button
                         type="submit" 
                         className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white h-12 rounded-lg font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-300"
                         disabled={isSubmitting}
