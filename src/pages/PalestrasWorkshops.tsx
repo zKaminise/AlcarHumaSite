@@ -19,7 +19,7 @@ const PalestrasWorkshops = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 px-4 bg-gradient-to-br from-background via-background to-primary/5">
+      <section className="pt-32 pb-12 px-4 bg-gradient-to-br from-background via-background to-primary/5">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation animationType="fade-in-up">
             <h1 className="title-hero mb-6 text-center">
@@ -37,7 +37,7 @@ const PalestrasWorkshops = () => {
       </section>
 
       {/* Portfólio de Palestras */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-6xl">
           <ScrollAnimation animationType="fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-12 text-center">
@@ -72,7 +72,7 @@ const PalestrasWorkshops = () => {
       </section>
 
       {/* Tema Específico Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-primary/5 via-background to-background">
+      <section className="py-12 px-4 bg-gradient-to-br from-primary/5 via-background to-background">
         <div className="container mx-auto max-w-4xl">
           <ScrollAnimation animationType="fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
@@ -102,7 +102,7 @@ const PalestrasWorkshops = () => {
       </section>
 
       {/* Workshop Ideal Section */}
-      <section className="py-20 px-4 bg-background">
+      <section className="py-12 px-4 bg-background">
         <div className="container mx-auto max-w-5xl">
           <ScrollAnimation animationType="fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6 text-center">
