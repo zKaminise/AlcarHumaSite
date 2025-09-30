@@ -348,11 +348,11 @@ const FaleConosco = () => {
                               />
                             </FormControl>
                             <div className="space-y-1 leading-none">
-                              <FormLabel className="text-sm text-card-dark-foreground font-normal">
+                              <FormLabel className="text-base text-card-dark-foreground font-normal cursor-pointer">
                                 Li e concordo com a{" "}
                                 <Link 
                                   to="/politica-privacidade" 
-                                  className="text-primary hover:text-primary/80 underline font-medium"
+                                  className="text-primary-light hover:text-primary underline underline-offset-4 font-semibold"
                                   target="_blank"
                                 >
                                   Política de Privacidade
