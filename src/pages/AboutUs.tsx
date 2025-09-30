@@ -51,15 +51,14 @@ const AboutUs = () => {
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation animationType="fade-in-up">
               <h1 className="title-hero mb-8">
-                Nossa Essência: <span className="text-gradient">Estratégia, Direito</span> e a Força do{" "}
-                <span className="text-gradient">Fator Humano</span>
+                Nossa Essência: <span className="text-gradient">Estratégia, Pessoas</span> e Resultados{" "}
+                <span className="text-gradient">Sustentáveis</span>
               </h1>
             </ScrollAnimation>
             
             <ScrollAnimation animationType="fade-in-up" delay={200}>
               <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
-                Entenda o que nos move, a jornada que nos trouxe até aqui e os valores que guiam 
-                cada projeto que assumimos.
+                Entenda o que nos move, nossa filosofia de trabalho e os valores que guiam cada projeto que assumimos.
               </p>
             </ScrollAnimation>
           </div>
