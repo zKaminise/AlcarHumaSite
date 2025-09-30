@@ -11,6 +11,9 @@ const Services = () => {
       navigate("/solucoes", { state: { scrollTo: "nr1" } });
     } else if (serviceType === "grc") {
       navigate("/solucoes", { state: { scrollTo: "grc" } });
+    } else if (serviceType === "workshop") {
+      navigate("/palestras-workshops");
+      setTimeout(() => window.scrollTo(0, 0), 100);
     } else {
       navigate("/metodo-impulsionar");
       setTimeout(() => window.scrollTo(0, 0), 100);
