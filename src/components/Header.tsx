@@ -37,7 +37,7 @@ const Header = () => {
   };
 
   const menuItems = [
-    { name: "Sobre Nós", href: "/sobre-nos" },
+    { name: "Nosso Propósito", href: "/sobre-nos" },
     { name: "Nossas Soluções", href: "/solucoes" },
     { name: "Método Impulsionar", href: "/metodo-impulsionar" },
     { name: "Parceiros", href: "/parceiros" },
