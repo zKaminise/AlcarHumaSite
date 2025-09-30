@@ -51,7 +51,7 @@ const AboutUs = () => {
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation animationType="fade-in-up">
               <h1 className="title-hero mb-8">
-                Nossa Essência: <span className="text-gradient">Estratégia, Direito</span> e a Força do{" "}
+                Nosso <span className="text-gradient">Propósito</span>: Estratégia, Direito e a Força do{" "}
                 <span className="text-gradient">Fator Humano</span>
               </h1>
             </ScrollAnimation>
