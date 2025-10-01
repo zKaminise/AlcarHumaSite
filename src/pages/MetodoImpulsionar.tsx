@@ -1,13 +1,14 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Compass, Rocket, ArrowRight } from "lucide-react";
-import { useNavigate } from "react-router-dom";
+import ImpulsionarRequestModal from "@/components/ImpulsionarRequestModal";
 
 const MetodoImpulsionar = () => {
-  const navigate = useNavigate();
+  const [modalOpen, setModalOpen] = useState(false);
 
   const benefits = [
     {
@@ -79,10 +80,7 @@ const MetodoImpulsionar = () => {
               <Button 
                 size="lg"
                 className="btn-hero text-lg px-8 py-4 h-auto"
-                onClick={() => {
-                  navigate("/fale-conosco");
-                  setTimeout(() => window.scrollTo(0, 0), 100);
-                }}
+                onClick={() => setModalOpen(true)}
               >
                 Quero Impulsionar Minha Carreira
                 <ArrowRight className="ml-2 h-5 w-5" />
@@ -91,6 +89,11 @@ const MetodoImpulsionar = () => {
           </ScrollAnimation>
         </div>
       </main>
+
+      <ImpulsionarRequestModal 
+        open={modalOpen} 
+        onOpenChange={setModalOpen}
+      />
 
       <Footer />
     </div>
