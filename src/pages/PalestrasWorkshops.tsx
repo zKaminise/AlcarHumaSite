@@ -1,17 +1,23 @@
+import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ClipboardCheck, FileText, Users } from "lucide-react";
+import WorkshopRequestModal from "@/components/WorkshopRequestModal";
 
 const PalestrasWorkshops = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [requestType, setRequestType] = useState<"palestra" | "workshop">("palestra");
+
   const handleWhatsAppContact = () => {
     window.open('https://wa.me/5567996442404', '_blank');
   };
 
-  const handleCustomRequest = () => {
-    window.open('https://wa.me/5567996442404?text=Olá! Gostaria de solicitar uma palestra/workshop personalizado.', '_blank');
+  const handleCustomRequest = (type: "palestra" | "workshop") => {
+    setRequestType(type);
+    setModalOpen(true);
   };
 
   return (
@@ -91,7 +97,7 @@ const PalestrasWorkshops = () => {
               <Button 
                 className="btn-hero group"
                 size="lg"
-                onClick={handleCustomRequest}
+                onClick={() => handleCustomRequest("palestra")}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Solicitar uma Palestra Personalizada
@@ -166,7 +172,7 @@ const PalestrasWorkshops = () => {
               <Button 
                 className="btn-hero group"
                 size="lg"
-                onClick={handleCustomRequest}
+                onClick={() => handleCustomRequest("workshop")}
               >
                 <MessageCircle className="mr-2 h-5 w-5" />
                 Solicitar um Workshop Personalizado
@@ -175,6 +181,12 @@ const PalestrasWorkshops = () => {
           </ScrollAnimation>
         </div>
       </section>
+
+      <WorkshopRequestModal 
+        open={modalOpen} 
+        onOpenChange={setModalOpen}
+        requestType={requestType}
+      />
 
       <Footer />
     </div>
