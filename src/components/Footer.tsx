@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src={logoFooter} 
               alt="Alçar Humà Gestão e Pessoas" 
-              className="h-24 w-auto mb-4"
+              className="h-32 w-auto mb-4"
             />
             <h3 className="text-lg font-bold">Alçar Humà Gestão e Pessoas Ltda.</h3>
             <p className="text-sm text-primary-foreground/80 italic leading-relaxed">
@@ -47,7 +47,6 @@ const Footer = () => {
           <div>
             <h4 className="text-base font-semibold mb-4 text-auxiliary">Navegação</h4>
             <ul className="space-y-2.5">
-              <li><a href="/" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Início</a></li>
               <li><a href="/sobre-nos" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Sobre Nós</a></li>
               <li><a href="/solucoes" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Soluções</a></li>
               <li><a href="/metodo-impulsionar" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Método Impulsionar</a></li>
