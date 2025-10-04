@@ -24,10 +24,9 @@ const About = () => {
 
             <ScrollAnimation animationType="fade-in-up" delay={200}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A Alçar Humà nasceu da convicção de que empresas de sucesso são construídas sobre 
-                duas fundações: processos inteligentes e pessoas valorizadas. Unimos a expertise em 
-                Gestão de Pessoas, Direito e Estratégia de Negócios para oferecer soluções que geram 
-                resultados reais e duradouros.
+                A Alçar humà nasceu da convicção 
+                de que empresas de sucesso são construídas sobre dois pilares: processos 
+                inteligentes e pessoas valorizadas.
               </p>
             </ScrollAnimation>
 
