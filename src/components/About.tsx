@@ -80,15 +80,6 @@ const About = () => {
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                
-                {/* Founder image overlay */}
-                <div className="absolute -bottom-6 -right-6 w-40 h-40 rounded-2xl overflow-hidden shadow-lg border-4 border-background bg-white">
-                  <img
-                    src={founderImage}
-                    alt="Marianna S. P. Aquino - Fundadora"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
               </div>
             </ScrollAnimation>
           </div>
