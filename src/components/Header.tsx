@@ -57,7 +57,7 @@ const Header = () => {
             <img 
               src={logoAlcar} 
               alt="Alçar Humà - Gestão e Pessoas" 
-              className={`w-auto object-contain transition-all duration-300 group-hover:scale-105 ${isAtTop ? 'h-12' : 'h-10'}`}
+              className={`w-auto object-contain transition-all duration-300 group-hover:scale-105 ${isAtTop ? 'h-16' : 'h-14'}`}
             />
           </button>
 
