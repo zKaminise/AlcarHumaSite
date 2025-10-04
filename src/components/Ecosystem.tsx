@@ -88,7 +88,7 @@ const Ecosystem = () => {
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>
               <Button className="btn-hero group" onClick={() => {
-                navigate("/solucoes");
+                navigate("/parceiros");
                 setTimeout(() => window.scrollTo(0, 0), 100);
               }}>
                 Conheça nosso Ecossistema
