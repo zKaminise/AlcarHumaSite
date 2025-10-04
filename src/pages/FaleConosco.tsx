@@ -24,15 +24,12 @@ const FaleConosco = () => {
         <div className="container mx-auto px-4 relative">
           <ScrollAnimation animationType="fade-in-up">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="title-hero text-foreground mb-6">
-                Vamos Conversar?
+              <h1 className="title-hero mb-6">
+                <span className="text-gradient">Fale Conosco</span>
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground mb-4 leading-relaxed">
-                Estamos prontos para impulsionar o crescimento da sua empresa com 
-                <span className="text-gradient font-semibold"> soluções personalizadas</span> e resultados mensuráveis.
-              </p>
-              <p className="text-lg text-muted-foreground">
-                Entre em contato através dos nossos canais de atendimento.
+                Transforme desafios em oportunidades. Nossa equipe de especialistas está pronta 
+                para impulsionar o crescimento da sua empresa.
               </p>
             </div>
           </ScrollAnimation>
