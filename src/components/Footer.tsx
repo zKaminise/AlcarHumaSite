@@ -13,7 +13,7 @@ const Footer = () => {
             <img 
               src={logoFooter} 
               alt="Alçar Humà Gestão e Pessoas" 
-              className="h-32 w-auto mb-4"
+              className="h-28 w-auto mb-4"
             />
             <h3 className="text-lg font-bold">Alçar Humà Gestão e Pessoas Ltda.</h3>
             <p className="text-sm text-primary-foreground/80 italic leading-relaxed">
