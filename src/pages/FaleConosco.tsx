@@ -87,7 +87,7 @@ const FaleConosco = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <ScrollAnimation>
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Nossos <span className="text-gradient">Canais de Atendimento</span>
               </h2>
