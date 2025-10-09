@@ -81,8 +81,8 @@ const MetodoImpulsionar = () => {
               <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
                 <Card className="text-center card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-card-dark-foreground/20 mb-6">
-                      <benefit.icon className="h-8 w-8 text-card-dark-foreground" />
+                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary mb-6">
+                      <benefit.icon className="h-8 w-8 text-primary-foreground" />
                     </div>
                     <h1 className="text-xl font-semibold text-card-dark-foreground mb-4">
                       {benefit.title}
