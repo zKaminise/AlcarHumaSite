@@ -132,8 +132,8 @@ const PalestrasWorkshops = () => {
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <ScrollAnimation animationType="fade-in-up" delay={400}>
               <div className="bg-card-dark backdrop-blur-sm border border-border/30 rounded-lg p-6 text-center hover:border-primary/40 transition-all duration-300">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <ClipboardCheck className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <ClipboardCheck className="h-8 w-8 text-green-400" />
                 </div>
                 <h4 className="text-xl font-semibold text-card-dark-foreground mb-3">Diagnóstico</h4>
                 <p className="text-card-dark-foreground-muted">
@@ -144,8 +144,8 @@ const PalestrasWorkshops = () => {
 
             <ScrollAnimation animationType="fade-in-up" delay={500}>
               <div className="bg-card-dark backdrop-blur-sm border border-border/30 rounded-lg p-6 text-center hover:border-primary/40 transition-all duration-300">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <FileText className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <FileText className="h-8 w-8 text-blue-400" />
                 </div>
                 <h4 className="text-xl font-semibold text-card-dark-foreground mb-3">Desenho</h4>
                 <p className="text-card-dark-foreground-muted">
@@ -156,8 +156,8 @@ const PalestrasWorkshops = () => {
 
             <ScrollAnimation animationType="fade-in-up" delay={600}>
               <div className="bg-card-dark backdrop-blur-sm border border-border/30 rounded-lg p-6 text-center hover:border-primary/40 transition-all duration-300">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Users className="h-8 w-8 text-primary" />
+                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-purple-400" />
                 </div>
                 <h4 className="text-xl font-semibold text-card-dark-foreground mb-3">Execução</h4>
                 <p className="text-card-dark-foreground-muted">
