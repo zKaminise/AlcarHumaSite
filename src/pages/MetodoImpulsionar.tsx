@@ -77,23 +77,26 @@ const MetodoImpulsionar = () => {
         {/* Benefits Section */}
         <div className="container mx-auto px-4 mt-16">
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {benefits.map((benefit, index) => (
-              <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
-                <Card className="text-center card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary mb-6">
-                      <benefit.icon className="h-8 w-8 text-white" />
-                    </div>
-                    <h1 className="text-xl font-semibold text-card-dark-foreground mb-4">
-                      {benefit.title}
-                    </h1>
-                    <p className="text-card-dark-foreground-muted leading-relaxed">
-                      {benefit.description}
-                    </p>
-                  </CardContent>
-                </Card>
-              </ScrollAnimation>
-            ))}
+            {benefits.map((benefit, index) => {
+              const iconColors = ['text-cyan-400', 'text-amber-400', 'text-rose-400'];
+              return (
+                <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
+                  <Card className="text-center card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
+                    <CardContent className="p-6">
+                      <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary mb-6">
+                        <benefit.icon className={`h-8 w-8 ${iconColors[index]}`} />
+                      </div>
+                      <h1 className="text-xl font-semibold text-card-dark-foreground mb-4">
+                        {benefit.title}
+                      </h1>
+                      <p className="text-card-dark-foreground-muted leading-relaxed">
+                        {benefit.description}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </ScrollAnimation>
+              );
+            })}
           </div>
         </div>
 

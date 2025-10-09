@@ -126,17 +126,17 @@ const Solucoes = () => {
               </h1>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { icon: CheckCircle, title: "Conformidade total\ncom a NR-1" },
-                  { icon: Target, title: "Promoção da saúde mental\ne bem-estar" },
-                  { icon: TrendingDown, title: "Redução do absenteísmo\ne do turnover" },
-                  { icon: Zap, title: "Aumento do engajamento\ne da produtividade" },
-                  { icon: Shield, title: "Fortalecimento da sua\nmarca empregadora" },
-                  { icon: Scale, title: "Prevenção de litígios\ntrabalhistas" }
+                  { icon: CheckCircle, title: "Conformidade total\ncom a NR-1", color: "text-green-400" },
+                  { icon: Target, title: "Promoção da saúde mental\ne bem-estar", color: "text-blue-400" },
+                  { icon: TrendingDown, title: "Redução do absenteísmo\ne do turnover", color: "text-orange-400" },
+                  { icon: Zap, title: "Aumento do engajamento\ne da produtividade", color: "text-yellow-400" },
+                  { icon: Shield, title: "Fortalecimento da sua\nmarca empregadora", color: "text-purple-400" },
+                  { icon: Scale, title: "Prevenção de litígios\ntrabalhistas", color: "text-red-400" }
                 ].map((benefit, index) => (
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <benefit.icon className="w-6 h-6 text-white" />
+                        <benefit.icon className={`w-6 h-6 ${benefit.color}`} />
                       </div>
                       <p className="text-card-dark-foreground font-medium whitespace-pre-line">{benefit.title}</p>
                     </CardContent>
@@ -245,17 +245,17 @@ const Solucoes = () => {
               </h1>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {[
-                  { icon: Scale, title: "Maior segurança jurídica\ne operacional" },
-                  { icon: Target, title: "Tomada de decisão mais\nrápida e embasada" },
-                  { icon: Cog, title: "Otimização de processos\ne redução de custos" },
-                  { icon: Lock, title: "Proteção de dados\ne reputação da marca" },
-                  { icon: Sprout, title: "Preparação para receber\ninvestimentos e escalar o negócio" },
-                  { icon: Handshake, title: "Atração e retenção\nde talentos" }
+                  { icon: Scale, title: "Maior segurança jurídica\ne operacional", color: "text-blue-400" },
+                  { icon: Target, title: "Tomada de decisão mais\nrápida e embasada", color: "text-green-400" },
+                  { icon: Cog, title: "Otimização de processos\ne redução de custos", color: "text-orange-400" },
+                  { icon: Lock, title: "Proteção de dados\ne reputação da marca", color: "text-red-400" },
+                  { icon: Sprout, title: "Preparação para receber\ninvestimentos e escalar o negócio", color: "text-emerald-400" },
+                  { icon: Handshake, title: "Atração e retenção\nde talentos", color: "text-purple-400" }
                 ].map((benefit, index) => (
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <benefit.icon className="w-6 h-6 text-white" />
+                        <benefit.icon className={`w-6 h-6 ${benefit.color}`} />
                       </div>
                       <p className="text-card-dark-foreground font-medium whitespace-pre-line">{benefit.title}</p>
                     </CardContent>
