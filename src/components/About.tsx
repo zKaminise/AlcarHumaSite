@@ -16,17 +16,15 @@ const About = () => {
           <div className="space-y-8">
             <ScrollAnimation animationType="fade-in-up">
               <h1 className="title-section text-foreground">
-                Mais que uma consultoria, uma{" "}
-                <span className="text-gradient">parceira estratégica</span>{" "}
-                para o seu crescimento.
+                Mais que uma consultoria, uma <span className="text-gradient">parceira estratégica</span> para o seu
+                crescimento.
               </h1>
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={200}>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                A Alçar humà nasceu da convicção 
-                de que empresas de sucesso são construídas sobre dois pilares: processos 
-                inteligentes e pessoas valorizadas.
+                A Alçar Humà nasceu da convicção de que empresas de sucesso são construídas sobre dois pilares:
+                processos inteligentes e pessoas valorizadas.
               </p>
             </ScrollAnimation>
 
@@ -58,10 +56,13 @@ const About = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>
-              <Button className="btn-hero group" onClick={() => {
-                navigate("/sobre-nos");
-                setTimeout(() => window.scrollTo(0, 0), 100);
-              }}>
+              <Button
+                className="btn-hero group"
+                onClick={() => {
+                  navigate("/sobre-nos");
+                  setTimeout(() => window.scrollTo(0, 0), 100);
+                }}
+              >
                 Nosso Propósito
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
