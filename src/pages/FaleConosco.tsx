@@ -103,16 +103,16 @@ const FaleConosco = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             {/* WhatsApp Card */}
             <ScrollAnimation delay={100} animationType="fade-in-up">
-              <div className="group relative bg-gradient-to-br from-green-500/10 to-green-600/5 p-8 rounded-2xl border border-green-500/20 hover:border-green-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1">
+              <div className="group relative bg-gradient-to-br from-green-500/10 to-green-600/5 p-8 rounded-2xl border border-green-500/20 hover:border-green-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-green-500/10 hover:-translate-y-1 h-full flex flex-col">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-500/20 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
 
-                <div className="relative">
+                <div className="relative flex flex-col flex-1">
                   <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <MessageCircle className="h-8 w-8 text-white" />
                   </div>
 
                   <h3 className="text-xl font-bold text-foreground mb-2">WhatsApp</h3>
-                  <p className="text-muted-foreground text-sm mb-4">(11) 99999-9999</p>
+                  <p className="text-muted-foreground text-sm mb-4 flex-1">(11) 99999-9999</p>
 
                   <Button
                     variant="ghost"
@@ -127,17 +127,17 @@ const FaleConosco = () => {
 
             {/* Email Card */}
             <ScrollAnimation delay={200} animationType="fade-in-up">
-              <div className="group relative bg-gradient-to-br from-blue-500/10 to-blue-600/5 p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1">
+              <div className="group relative bg-gradient-to-br from-blue-500/10 to-blue-600/5 p-8 rounded-2xl border border-blue-500/20 hover:border-blue-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-blue-500/10 hover:-translate-y-1 h-full flex flex-col">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-500/20 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
 
-                <div className="relative">
+                <div className="relative flex flex-col flex-1">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <Mail className="h-8 w-8 text-white" />
                   </div>
 
                   <h3 className="text-xl font-bold text-foreground mb-2">E-mail</h3>
                   <p className="text-muted-foreground text-sm mb-1 break-all">contato@alcarhumana.com.br</p>
-                  <p className="text-xs text-muted-foreground/70 mb-4">Resposta em até 24h</p>
+                  <p className="text-xs text-muted-foreground/70 mb-4 flex-1">Resposta em até 24h</p>
 
                   <Button
                     variant="ghost"
@@ -152,10 +152,10 @@ const FaleConosco = () => {
 
             {/* Horários Card */}
             <ScrollAnimation delay={300} animationType="fade-in-up">
-              <div className="group relative bg-gradient-to-br from-orange-500/10 to-orange-600/5 p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1">
+              <div className="group relative bg-gradient-to-br from-orange-500/10 to-orange-600/5 p-8 rounded-2xl border border-orange-500/20 hover:border-orange-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-orange-500/10 hover:-translate-y-1 h-full flex flex-col">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-500/20 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
 
-                <div className="relative">
+                <div className="relative flex flex-col flex-1">
                   <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <Clock className="h-8 w-8 text-white" />
                   </div>
@@ -163,17 +163,17 @@ const FaleConosco = () => {
                   <h3 className="text-xl font-bold text-foreground mb-2">Horários</h3>
                   <p className="text-muted-foreground text-sm mb-1">Segunda à sexta</p>
                   <p className="text-foreground font-semibold mb-2">8h às 18h</p>
-                  <p className="text-xs text-muted-foreground/70">Presencial ou on-line</p>
+                  <p className="text-xs text-muted-foreground/70 flex-1">Presencial ou on-line</p>
                 </div>
               </div>
             </ScrollAnimation>
 
             {/* Localização Card */}
             <ScrollAnimation delay={400} animationType="fade-in-up">
-              <div className="group relative bg-gradient-to-br from-purple-500/10 to-purple-600/5 p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1">
+              <div className="group relative bg-gradient-to-br from-purple-500/10 to-purple-600/5 p-8 rounded-2xl border border-purple-500/20 hover:border-purple-500/40 transition-all duration-500 hover:shadow-xl hover:shadow-purple-500/10 hover:-translate-y-1 h-full flex flex-col">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
 
-                <div className="relative">
+                <div className="relative flex flex-col flex-1">
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
                     <MapPin className="h-8 w-8 text-white" />
                   </div>
@@ -181,7 +181,7 @@ const FaleConosco = () => {
                   <h3 className="text-xl font-bold text-foreground mb-2">Localização</h3>
                   <p className="text-muted-foreground text-sm mb-1">São Paulo, SP</p>
                   <p className="text-foreground font-semibold mb-2">Brasil</p>
-                  <p className="text-xs text-muted-foreground/70">Atendimento em todo território nacional</p>
+                  <p className="text-xs text-muted-foreground/70 flex-1">Atendimento em todo território nacional</p>
                 </div>
               </div>
             </ScrollAnimation>
