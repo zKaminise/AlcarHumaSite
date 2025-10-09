@@ -136,7 +136,7 @@ const Solucoes = () => {
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <benefit.icon className="w-6 h-6 text-primary-foreground" />
+                        <benefit.icon className="w-6 h-6 text-white" />
                       </div>
                       <p className="text-card-dark-foreground font-medium whitespace-pre-line">{benefit.title}</p>
                     </CardContent>
@@ -255,7 +255,7 @@ const Solucoes = () => {
                   <Card key={index} className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                     <CardContent className="p-6 text-center">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <benefit.icon className="w-6 h-6 text-primary-foreground" />
+                        <benefit.icon className="w-6 h-6 text-white" />
                       </div>
                       <p className="text-card-dark-foreground font-medium whitespace-pre-line">{benefit.title}</p>
                     </CardContent>

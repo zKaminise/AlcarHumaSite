@@ -228,7 +228,7 @@ const AboutUs = () => {
                   <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 h-full flex flex-col">
                     <CardHeader className="pb-3">
                       <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mb-4">
-                        <value.icon className="h-6 w-6 text-primary-foreground" />
+                        <value.icon className="h-6 w-6 text-white" />
                       </div>
                       <CardTitle className="text-xl font-semibold text-card-dark-foreground">
                         {value.title}
