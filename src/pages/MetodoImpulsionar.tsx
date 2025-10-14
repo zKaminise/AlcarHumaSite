@@ -62,7 +62,7 @@ const MetodoImpulsionar = () => {
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation>
               <h1 className="title-hero text-gradient mb-8">
-                Método Impulsionar: Sua Carreira em Aceleração
+                Programa Impulsionar - Sua carreira em aceleração
               </h1>
             </ScrollAnimation>
 
