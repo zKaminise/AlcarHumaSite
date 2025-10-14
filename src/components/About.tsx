@@ -32,22 +32,22 @@ const About = () => {
             <ScrollAnimation animationType="fade-in-up" delay={300}>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
                 <div className="text-center p-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Users className="h-6 w-6 text-primary" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <Users className="h-7 w-7 text-white" />
                   </div>
                   <h1 className="font-semibold text-foreground">Pessoas</h1>
                   <p className="text-sm text-muted-foreground">Valorizadas</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Target className="h-6 w-6 text-primary" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <Target className="h-7 w-7 text-white" />
                   </div>
                   <h1 className="font-semibold text-foreground">Processos</h1>
                   <p className="text-sm text-muted-foreground">Inteligentes</p>
                 </div>
                 <div className="text-center p-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Award className="h-6 w-6 text-primary" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
+                    <Award className="h-7 w-7 text-white" />
                   </div>
                   <h1 className="font-semibold text-foreground">Resultados</h1>
                   <p className="text-sm text-muted-foreground">Duradouros</p>
