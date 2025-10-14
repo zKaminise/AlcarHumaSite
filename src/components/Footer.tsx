@@ -49,7 +49,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               <li><a href="/sobre-nos" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Sobre Nós</a></li>
               <li><a href="/solucoes" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Soluções</a></li>
-              <li><a href="/metodo-impulsionar" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Método Impulsionar</a></li>
+              <li><a href="/metodo-impulsionar" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Programa Impulsionar</a></li>
               <li><a href="/parceiros" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Parceiros</a></li>
               <li><a href="/palestras-workshops" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Palestras & Workshops</a></li>
               <li><a href="/artigos" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Artigos</a></li>
