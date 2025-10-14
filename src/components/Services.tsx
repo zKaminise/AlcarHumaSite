@@ -76,8 +76,8 @@ const Services = () => {
               {/* Icon */}
               <ScrollAnimation animationType="fade-in-up" delay={index * 100}>
                 <div className="flex items-center justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-md">
-                    <service.icon className="h-8 w-8 text-primary-foreground" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                    <service.icon className="h-8 w-8 text-white" />
                   </div>
                 </div>
               </ScrollAnimation>
