@@ -18,7 +18,7 @@ const CTA = () => {
           <ScrollAnimation animationType="fade-in-up">
             <h1 className="title-hero text-primary-foreground mb-8">
               Vamos construir o futuro do seu{" "}
-              <span className="text-auxiliary">negócio juntos?</span>
+              <span className="text-gradient">negócio juntos?</span>
             </h1>
           </ScrollAnimation>
 
