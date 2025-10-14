@@ -13,6 +13,7 @@ import FaleConosco from "./pages/FaleConosco";
 import PalestrasWorkshops from "./pages/PalestrasWorkshops";
 import PoliticaPrivacidade from "./pages/PoliticaPrivacidade";
 import NotFound from "./pages/NotFound";
+import WhatsAppFloat from "./components/WhatsAppFloat";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <WhatsAppFloat />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
