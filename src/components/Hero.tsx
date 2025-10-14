@@ -1,11 +1,21 @@
 import { ArrowRight, Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import heroCarousel1 from "@/assets/hero-carousel-1.jpg";
+import heroCarousel2 from "@/assets/hero-carousel-2.jpg";
+import heroCarousel3 from "@/assets/hero-carousel-3.jpg";
 import ScrollAnimation from "./ScrollAnimation";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
 
 const Hero = () => {
   const navigate = useNavigate();
+
+  const carouselImages = [
+    { src: heroCarousel1, alt: "Consultoria estratégica - Reunião de negócios" },
+    { src: heroCarousel2, alt: "Consultoria estratégica - Análise de crescimento" },
+    { src: heroCarousel3, alt: "Consultoria estratégica - Inovação tecnológica" }
+  ];
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
@@ -51,16 +61,33 @@ const Hero = () => {
             </ScrollAnimation>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Image Carousel */}
           <ScrollAnimation animationType="slide-in-right" delay={300} duration={1200}>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-6" />
               <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg">
-                <img
-                  src={heroImage}
-                  alt="Consultoria estratégica Alçar Humà"
-                  className="w-full h-auto object-cover"
-                />
+                <Carousel
+                  opts={{
+                    loop: true,
+                  }}
+                  plugins={[
+                    Autoplay({
+                      delay: 5000,
+                    }),
+                  ]}
+                >
+                  <CarouselContent>
+                    {carouselImages.map((image, index) => (
+                      <CarouselItem key={index}>
+                        <img
+                          src={image.src}
+                          alt={image.alt}
+                          className="w-full h-auto object-cover"
+                        />
+                      </CarouselItem>
+                    ))}
+                  </CarouselContent>
+                </Carousel>
               </div>
             </div>
           </ScrollAnimation>
