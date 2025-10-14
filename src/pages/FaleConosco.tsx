@@ -170,8 +170,7 @@ const FaleConosco = () => {
                   <h3 className="text-xl font-bold text-foreground mb-2">Localização</h3>
                   <p className="text-muted-foreground text-sm mb-1">Av. Afonso Pena, 5723</p>
                   <p className="text-muted-foreground text-sm mb-1">15º - 7º andar - Royal Park</p>
-                  <p className="text-foreground font-semibold mb-2">Campo Grande - MS, 79040-010</p>
-                  <p className="text-xs text-muted-foreground/70">Atendimento em todo território nacional</p>
+                  <p className="text-foreground font-semibold">Campo Grande - MS</p>
                 </div>
               </div>
             </ScrollAnimation>
