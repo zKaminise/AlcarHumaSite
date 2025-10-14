@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Network, Lightbulb, Users2 } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import ecosystemImage from "@/assets/ecosystem-image.jpg";
+
 import ScrollAnimation from "./ScrollAnimation";
 
 const Ecosystem = () => {
@@ -17,7 +17,7 @@ const Ecosystem = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl transform -rotate-3" />
               <div className="relative rounded-3xl overflow-hidden shadow-lg">
                 <img
-                  src={ecosystemImage}
+                  src="/ecosystem-image.png"
                   alt="Ecossistema de especialistas Alçar Humà"
                   className="w-full h-auto object-cover"
                 />
