@@ -75,7 +75,9 @@ const Footer = () => {
               </div>
               <div className="flex items-start space-x-3">
                 <MapPin className="h-4 w-4 text-auxiliary flex-shrink-0 mt-1" />
-                <span className="text-sm text-primary-foreground/80">Campo Grande. MS.</span>
+                <span className="text-sm text-primary-foreground/80">
+                  Av. Afonso Pena, 5723 - 15º - 7º andar - Royal Park, Campo Grande - MS, 79040-010
+                </span>
               </div>
               
               {/* LGPD Contact */}

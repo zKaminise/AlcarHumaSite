@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import teamCollaboration from "@/assets/team-collaboration.jpg";
 
 const FaleConosco = () => {
-  const whatsappNumber = "5511999999999"; // Formato: código do país + DDD + número
+  const whatsappNumber = "5567996442404";
   const whatsappMessage = encodeURIComponent("Olá! Gostaria de saber mais sobre os serviços da Alçar Humà.");
 
   return (
@@ -107,7 +107,7 @@ const FaleConosco = () => {
                   </div>
                   
                   <h3 className="text-xl font-bold text-foreground mb-2">WhatsApp</h3>
-                  <p className="text-muted-foreground text-sm mb-4">(11) 99999-9999</p>
+                  <p className="text-muted-foreground text-sm mb-4">(67) 99644-2404</p>
                   
                   <Button 
                     variant="ghost" 
@@ -168,8 +168,9 @@ const FaleConosco = () => {
                   </div>
                   
                   <h3 className="text-xl font-bold text-foreground mb-2">Localização</h3>
-                  <p className="text-muted-foreground text-sm mb-1">São Paulo, SP</p>
-                  <p className="text-foreground font-semibold mb-2">Brasil</p>
+                  <p className="text-muted-foreground text-sm mb-1">Av. Afonso Pena, 5723</p>
+                  <p className="text-muted-foreground text-sm mb-1">15º - 7º andar - Royal Park</p>
+                  <p className="text-foreground font-semibold mb-2">Campo Grande - MS, 79040-010</p>
                   <p className="text-xs text-muted-foreground/70">Atendimento em todo território nacional</p>
                 </div>
               </div>
@@ -188,13 +189,13 @@ const FaleConosco = () => {
                   Nossa Localização
                 </h2>
                 <p className="text-muted-foreground">
-                  Baseados em São Paulo, atendemos clientes em todo o Brasil
+                  Baseados em Campo Grande - MS, atendemos clientes em todo o Brasil
                 </p>
               </div>
               
               <div className="rounded-3xl overflow-hidden shadow-2xl border border-border/50">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0973848166833!2d-46.65844662493743!3d-23.561187178776234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt!2sbr!4v1695000000000!5m2!1spt!2sbr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.1894836788996!2d-54.62796062411859!3d-20.464447281040966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e7f7f6f6f6f7%3A0x1f6f6f6f6f6f6f6!2sAv.%20Afonso%20Pena%2C%205723%20-%20Jardim%20dos%20Estados%2C%20Campo%20Grande%20-%20MS%2C%2079040-010!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}
