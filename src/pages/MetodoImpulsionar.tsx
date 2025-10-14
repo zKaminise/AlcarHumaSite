@@ -101,7 +101,7 @@ const MetodoImpulsionar = () => {
         <div className="container mx-auto px-4 mt-24">
           <ScrollAnimation>
             <h2 className="title-section text-center mb-4">
-              Como Funciona o <span className="text-gradient">Método Impulsionar</span>
+              Como funciona o <span className="text-gradient">Programa Impulsionar</span>
             </h2>
           </ScrollAnimation>
           
