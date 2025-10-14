@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Users, Target, Award } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import integrationImage from "@/assets/integration-image.jpg";
+import integrationImage from "@/assets/about-partnership.jpg";
 import founderImage from "@/assets/founder-image.jpg";
 import ScrollAnimation from "./ScrollAnimation";
 
