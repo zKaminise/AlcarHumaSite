@@ -99,8 +99,8 @@ const AboutUs = () => {
               <ScrollAnimation key={item.title} animationType="fade-in-up" delay={index * 100}>
                 <div className="flex gap-4 p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/30 transition-all duration-300">
                   <div className="flex-shrink-0">
-                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center">
-                      <CheckCircle2 className="h-5 w-5 text-primary-foreground" />
+                    <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                      <CheckCircle2 className="h-5 w-5 text-white" />
                     </div>
                   </div>
                   <div>
@@ -140,8 +140,8 @@ const AboutUs = () => {
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-90 flex items-center justify-center">
-                  <Target className="h-10 w-10 text-primary-foreground" />
+                <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-90 flex items-center justify-center shadow-lg">
+                  <Target className="h-10 w-10 text-white" />
                 </div>
               </div>
             </ScrollAnimation>
@@ -154,8 +154,8 @@ const AboutUs = () => {
                   <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-primary to-secondary rounded-full"></div>
                   <div className="pl-8">
                     <div className="flex items-center space-x-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center">
-                        <Target className="h-6 w-6 text-primary-foreground" />
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                        <Target className="h-6 w-6 text-white" />
                       </div>
                       <h1 className="text-2xl font-bold text-foreground">Propósito</h1>
                     </div>
@@ -173,8 +173,8 @@ const AboutUs = () => {
                   <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-auxiliary to-primary rounded-full"></div>
                   <div className="pl-8">
                     <div className="flex items-center space-x-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-auxiliary to-primary rounded-xl flex items-center justify-center">
-                        <Target className="h-6 w-6 text-auxiliary-foreground" />
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                        <Target className="h-6 w-6 text-white" />
                       </div>
                       <h1 className="text-2xl font-bold text-foreground">Missão</h1>
                     </div>
@@ -192,8 +192,8 @@ const AboutUs = () => {
                   <div className="absolute -left-4 top-0 w-1 h-full bg-gradient-to-b from-secondary to-auxiliary rounded-full"></div>
                   <div className="pl-8">
                     <div className="flex items-center space-x-3 mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-auxiliary rounded-xl flex items-center justify-center">
-                        <Eye className="h-6 w-6 text-secondary-foreground" />
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                        <Eye className="h-6 w-6 text-white" />
                       </div>
                       <h1 className="text-2xl font-bold text-foreground">Visão</h1>
                     </div>
@@ -227,8 +227,8 @@ const AboutUs = () => {
                 <ScrollAnimation animationType="fade-in-up" delay={index * 100} className="flex-1 h-full">
                   <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 h-full flex flex-col">
                     <CardHeader className="pb-3">
-                      <div className="w-12 h-12 bg-gradient-to-br from-card-dark-foreground/20 to-card-dark-foreground/30 rounded-xl flex items-center justify-center mb-4">
-                        <value.icon className="h-6 w-6 text-card-dark-foreground" />
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-4 shadow-lg">
+                        <value.icon className="h-6 w-6 text-white" />
                       </div>
                       <CardTitle className="text-xl font-semibold text-card-dark-foreground">
                         {value.title}
@@ -261,8 +261,8 @@ const AboutUs = () => {
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-auxiliary rounded-2xl flex items-center justify-center shadow-md">
-                  <Users2 className="h-6 w-6 text-auxiliary-foreground" />
+                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                  <Users2 className="h-6 w-6 text-white" />
                 </div>
               </div>
             </ScrollAnimation>

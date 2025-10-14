@@ -81,8 +81,8 @@ const MetodoImpulsionar = () => {
               <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
                 <Card className="text-center card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-card-dark-foreground/20 mb-6">
-                      <benefit.icon className="h-8 w-8 text-card-dark-foreground" />
+                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+                      <benefit.icon className="h-8 w-8 text-white" />
                     </div>
                     <h1 className="text-xl font-semibold text-card-dark-foreground mb-4">
                       {benefit.title}
@@ -129,8 +129,8 @@ const MetodoImpulsionar = () => {
                 <ScrollAnimation key={step.number} delay={400 + index * 100}>
                   <div className="flex gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                        <span className="text-primary-foreground font-bold">{step.number}</span>
+                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold">{step.number}</span>
                       </div>
                     </div>
                     <div>

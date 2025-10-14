@@ -78,7 +78,9 @@ const Parceiros = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              <Users className="w-16 h-16 mx-auto text-primary mb-6" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Users className="h-8 w-8 text-white" />
+              </div>
               <h1 className="title-section text-foreground mb-6">
                 Nossos Parceiros
               </h1>
@@ -151,7 +153,9 @@ const Parceiros = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
             <div className="text-center mb-12">
-              <Network className="w-16 h-16 mx-auto text-primary mb-6" />
+              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
+                <Network className="h-8 w-8 text-white" />
+              </div>
               <h1 className="title-section text-foreground mb-8">
                 Inteligência Coletiva a Serviço do Seu Negócio
               </h1>
