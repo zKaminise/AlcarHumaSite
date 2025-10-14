@@ -55,8 +55,8 @@ const Ecosystem = () => {
             <ScrollAnimation animationType="fade-in-up" delay={300}>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                    <Lightbulb className="h-5 w-5 text-primary" />
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
+                    <Lightbulb className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h1 className="font-semibold text-foreground mb-2">Soluções Personalizadas</h1>
@@ -65,8 +65,8 @@ const Ecosystem = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                    <Network className="h-5 w-5 text-primary" />
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
+                    <Network className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h1 className="font-semibold text-foreground mb-2">Rede de Especialistas</h1>
@@ -75,8 +75,8 @@ const Ecosystem = () => {
                 </div>
 
                 <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0 mt-1">
-                    <Users2 className="h-5 w-5 text-primary" />
+                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
+                    <Users2 className="h-5 w-5 text-white" />
                   </div>
                   <div>
                     <h1 className="font-semibold text-foreground mb-2">Múltiplas Perspectivas</h1>
