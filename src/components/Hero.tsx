@@ -5,17 +5,30 @@ import heroCarousel1 from "@/assets/hero-carousel-1.jpg";
 import heroCarousel2 from "@/assets/hero-carousel-2.jpg";
 import heroCarousel3 from "@/assets/hero-carousel-3.jpg";
 import ScrollAnimation from "./ScrollAnimation";
-import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem, CarouselApi } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import { useEffect, useState } from "react";
 
 const Hero = () => {
   const navigate = useNavigate();
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
 
   const carouselImages = [
     { src: heroCarousel1, alt: "Consultoria estratégica - Reunião de negócios" },
     { src: heroCarousel2, alt: "Consultoria estratégica - Análise de crescimento" },
     { src: heroCarousel3, alt: "Consultoria estratégica - Inovação tecnológica" }
   ];
+
+  useEffect(() => {
+    if (!api) return;
+
+    setCurrent(api.selectedScrollSnap());
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
@@ -64,8 +77,9 @@ const Hero = () => {
           {/* Hero Image Carousel */}
           <ScrollAnimation animationType="slide-in-right" delay={300} duration={1200}>
             <div className="relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-primary/10">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Carousel
+                  setApi={setApi}
                   opts={{
                     loop: true,
                   }}
@@ -87,6 +101,22 @@ const Hero = () => {
                     ))}
                   </CarouselContent>
                 </Carousel>
+              </div>
+              
+              {/* Carousel Indicators */}
+              <div className="flex justify-center gap-2 mt-4">
+                {carouselImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => api?.scrollTo(index)}
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      current === index 
+                        ? "w-8 bg-gradient-to-r from-primary to-secondary" 
+                        : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                    }`}
+                    aria-label={`Ir para imagem ${index + 1}`}
+                  />
+                ))}
               </div>
             </div>
           </ScrollAnimation>
