@@ -64,8 +64,7 @@ const Hero = () => {
           {/* Hero Image Carousel */}
           <ScrollAnimation animationType="slide-in-right" delay={300} duration={1200}>
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl transform rotate-6" />
-              <div className="relative bg-white rounded-3xl overflow-hidden shadow-lg">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-primary/10">
                 <Carousel
                   opts={{
                     loop: true,
