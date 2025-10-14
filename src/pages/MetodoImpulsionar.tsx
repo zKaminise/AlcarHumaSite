@@ -68,7 +68,7 @@ const MetodoImpulsionar = () => {
 
             <ScrollAnimation delay={200}>
               <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
-                Cansado de sentir que sua carreira está estagnada? Precisa se preparar para assumir uma posição de liderança? Quer melhorar seus resultados? O Impulsionar é nossa metodologia exclusiva, aplicada em um Programa de Desenvolvimento Individual (PDI), que transforma potencial em liderança. Mapeamos suas competências, definimos metas claras e criamos um plano de ação para você alcançar o próximo nível. O nosso propósito é impulsionar o seu!
+                Cansado de sentir que sua carreira está estagnada? Precisa se preparar para assumir uma posição de liderança? Quer melhorar seus resultados? Nossa abordagem guia um Plano de Desenvolvimento Individual (PDI), que transforma potencial em liderança. Mapeamos suas competências, definimos metas claras e criamos um plano de ação para você alcançar o próximo nível. O nosso propósito é impulsionar o seu!
               </p>
             </ScrollAnimation>
           </div>
