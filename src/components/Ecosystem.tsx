@@ -14,18 +14,13 @@ const Ecosystem = () => {
           {/* Image */}
           <ScrollAnimation animationType="slide-in-left">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-3xl transform -rotate-3" />
-              <div className="relative rounded-3xl overflow-hidden shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-3xl transform -rotate-3 blur-sm" />
+              <div className="relative rounded-3xl overflow-hidden shadow-xl border border-primary/10">
                 <img
                   src="/ecosystem-image.png"
                   alt="Ecossistema de especialistas Alçar Humà"
                   className="w-full h-auto object-cover"
                 />
-              </div>
-              
-              {/* Floating elements */}
-              <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
-                <Network className="h-10 w-10 text-primary-foreground" />
               </div>
             </div>
           </ScrollAnimation>
