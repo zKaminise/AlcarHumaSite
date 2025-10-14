@@ -27,10 +27,6 @@ const Ecosystem = () => {
               <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
                 <Network className="h-10 w-10 text-primary-foreground" />
               </div>
-              
-              <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-auxiliary rounded-2xl flex items-center justify-center shadow-md">
-                <Users2 className="h-8 w-8 text-auxiliary-foreground" />
-              </div>
             </div>
           </ScrollAnimation>
 
