@@ -308,7 +308,7 @@ const ImpulsionarRequestModal = ({ open, onOpenChange }: ImpulsionarRequestModal
                 name="objetivos"
                 render={() => (
                   <FormItem>
-                    <FormLabel>O que você mais deseja alcançar ao aplicar o Método Impulsionar? * (pode selecionar mais de um)</FormLabel>
+                    <FormLabel>O que você mais deseja alcançar ao aplicar o Programa Impulsionar? * (pode selecionar mais de um)</FormLabel>
                     <div className="space-y-3">
                       {objetivosOptions.map((option) => (
                         <FormField
@@ -367,7 +367,7 @@ const ImpulsionarRequestModal = ({ open, onOpenChange }: ImpulsionarRequestModal
                 name="comoConheceu"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Como você conheceu a Alçar Humà / Método Impulsionar? *</FormLabel>
+                    <FormLabel>Como você conheceu a Alçar Humà / Programa Impulsionar? *</FormLabel>
                     <FormControl>
                       <div className="space-y-3">
                         {comoConheceuOptions.map((option) => (
