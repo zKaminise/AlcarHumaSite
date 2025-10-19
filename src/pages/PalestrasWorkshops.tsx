@@ -6,6 +6,7 @@ import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import { MessageCircle, ClipboardCheck, FileText, Users } from "lucide-react";
 import WorkshopRequestModal from "@/components/WorkshopRequestModal";
+import palestrasHeroImage from "@/assets/palestras-hero.png";
 
 const PalestrasWorkshops = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -26,19 +27,35 @@ const PalestrasWorkshops = () => {
       
       {/* Hero Section */}
       <section className="pt-32 pb-12 px-4 bg-gradient-to-br from-background via-background to-primary/5">
-        <div className="container mx-auto max-w-6xl">
-          <ScrollAnimation animationType="fade-in-up">
-            <h1 className="title-hero mb-6 text-center">
-              Palestras e Workshops que <span className="text-gradient">Transformam Equipes</span> e Fortalecem{" "}
-              <span className="text-gradient">Negócios</span>
-            </h1>
-          </ScrollAnimation>
-          
-          <ScrollAnimation animationType="fade-in-up" delay={200}>
-            <p className="text-lg md:text-xl text-muted-foreground text-center max-w-4xl mx-auto leading-relaxed">
-              Desenvolvemos e aplicamos treinamentos com foco em comunicação, liderança e conformidade, adaptados à realidade da sua empresa.
-            </p>
-          </ScrollAnimation>
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Text Content */}
+            <div>
+              <ScrollAnimation animationType="fade-in-up">
+                <h1 className="title-hero mb-6">
+                  Palestras e Workshops que <span className="text-gradient">Transformam Equipes</span> e Fortalecem{" "}
+                  <span className="text-gradient">Negócios</span>
+                </h1>
+              </ScrollAnimation>
+              
+              <ScrollAnimation animationType="fade-in-up" delay={200}>
+                <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                  Desenvolvemos e aplicamos treinamentos com foco em comunicação, liderança e conformidade, adaptados à realidade da sua empresa.
+                </p>
+              </ScrollAnimation>
+            </div>
+
+            {/* Image */}
+            <ScrollAnimation animationType="slide-in-right" delay={300}>
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                <img 
+                  src={palestrasHeroImage} 
+                  alt="Palestrante apresentando workshop para audiência" 
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </ScrollAnimation>
+          </div>
         </div>
       </section>
 
