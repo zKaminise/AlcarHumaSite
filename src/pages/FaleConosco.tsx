@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { Mail, Phone, MapPin, Clock, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import teamCollaboration from "@/assets/team-collaboration.jpg";
+import contactVideo from "@/assets/contact-video.mp4";
 
 const FaleConosco = () => {
   const whatsappNumber = "5567996442404";
@@ -42,12 +42,16 @@ const FaleConosco = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <ScrollAnimation animationType="slide-in-left">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 mix-blend-overlay"></div>
-                <img
-                  src={teamCollaboration}
-                  alt="Equipe Alçar Humà - Consultoria e Desenvolvimento"
+                <video
+                  src={contactVideo}
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
                   className="w-full h-auto object-cover"
-                />
+                >
+                  Seu navegador não suporta vídeos.
+                </video>
               </div>
             </ScrollAnimation>
 
