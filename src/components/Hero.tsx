@@ -60,7 +60,7 @@ const Hero = () => {
                   navigate("/metodo-impulsionar");
                   setTimeout(() => window.scrollTo(0, 0), 100);
                 }}>
-                  Descubra o Método Impulsionar
+                  Descubra o Programa Impulsionar
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
                 <Button className="btn-hero-secondary group" onClick={() => {
