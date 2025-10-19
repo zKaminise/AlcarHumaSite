@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { useNavigate } from "react-router-dom";
 import teamImage from "@/assets/team-collaboration.jpg";
-import missionVisionImage from "@/assets/mission-vision-hero.jpg";
+import missionVisionImage from "@/assets/values-mission-new.jpg";
 
 const AboutUs = () => {
   const navigate = useNavigate();
@@ -139,9 +139,6 @@ const AboutUs = () => {
                     alt="Propósito, Missão e Visão da Alçar Humà"
                     className="w-full h-auto object-cover"
                   />
-                </div>
-                <div className="absolute -top-6 -right-6 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-2xl opacity-90 flex items-center justify-center shadow-lg">
-                  <Target className="h-10 w-10 text-white" />
                 </div>
               </div>
             </ScrollAnimation>
