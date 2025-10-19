@@ -8,6 +8,8 @@ import ScrollAnimation from "@/components/ScrollAnimation";
 import { useNavigate } from "react-router-dom";
 import { Users, Target, Network } from "lucide-react";
 
+import logoCarmoSabala from "@/assets/logo-carmo-sabala.jpeg";
+
 // Dados dos parceiros
 const parceiros = [
   {
@@ -15,10 +17,19 @@ const parceiros = [
     nome: "Carmo Soluções Empresariais",
     especialidade: "Consultoria Contábil e Financeira",
     descricao: "Consultoria Contábil e Financeira com aplicação do Método CRIAR, focado em transformar a gestão de empresas e potencializar resultados.",
-    logo: "/logo-carmo.png"
+    logo: "/logo-carmo.png",
+    link: "https://www.carmosolucoes.com.br/"
   },
   {
     id: 2,
+    nome: "Carmo & Sabala",
+    especialidade: "Assessoria Contábil, Condomínio e Empresarial",
+    descricao: "Assessoria Contábil, Condomínio e Empresarial com excelência e comprometimento para o sucesso do seu negócio.",
+    logo: logoCarmoSabala,
+    link: "https://www.carmoesabala.com/"
+  },
+  {
+    id: 3,
     nome: "Taísa Gutierres",
     especialidade: "Especialista em RH e Analista Comportamental",
     descricao: "Especialista em RH e Analista Comportamental, com mais de 10 anos de experiência, focada em onboarding, análise de perfil, currículo estratégico e cargos e salários.",
@@ -97,7 +108,7 @@ const Parceiros = () => {
                   <DialogTrigger asChild>
                     <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 cursor-pointer group h-full">
                       <CardContent className="p-6 text-center h-full flex flex-col">
-                        <div className="w-32 h-32 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2">
+                        <div className={`${parceiro.id === 1 ? 'w-48 h-48' : 'w-32 h-32'} mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2`}>
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
@@ -113,16 +124,28 @@ const Parceiros = () => {
                         <p className="text-card-dark-foreground-muted text-sm leading-relaxed flex-1">
                           {parceiro.descricao}
                         </p>
-                        <div className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300">
-                          Saiba mais →
-                        </div>
+                        {parceiro.link ? (
+                          <a 
+                            href={parceiro.link} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            Saiba mais →
+                          </a>
+                        ) : (
+                          <div className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300">
+                            Saiba mais →
+                          </div>
+                        )}
                       </CardContent>
                     </Card>
                   </DialogTrigger>
                   <DialogContent className="max-w-md">
                     <DialogHeader>
                       <DialogTitle className="text-center">
-                        <div className="w-40 h-40 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-4">
+                        <div className={`${parceiro.id === 1 ? 'w-56 h-56' : 'w-40 h-40'} mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-4`}>
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
@@ -139,6 +162,18 @@ const Parceiros = () => {
                       <p className="text-muted-foreground leading-relaxed">
                         {parceiro.descricao}
                       </p>
+                      {parceiro.link && (
+                        <a 
+                          href={parceiro.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-block"
+                        >
+                          <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
+                            Visitar site →
+                          </Button>
+                        </a>
+                      )}
                     </div>
                   </DialogContent>
                 </Dialog>
