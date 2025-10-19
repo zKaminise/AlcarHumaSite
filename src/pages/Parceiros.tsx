@@ -101,14 +101,14 @@ const Parceiros = () => {
             </div>
           </ScrollAnimation>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {parceiros.map((parceiro, index) => (
               <ScrollAnimation key={parceiro.id} delay={index * 100}>
                 <Dialog>
                   <DialogTrigger asChild>
                     <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 cursor-pointer group h-full">
                       <CardContent className="p-6 text-center h-full flex flex-col">
-                        <div className={`${parceiro.id === 1 ? 'w-48 h-48' : 'w-32 h-32'} mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2`}>
+                        <div className="w-40 h-40 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2">
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
@@ -145,7 +145,7 @@ const Parceiros = () => {
                   <DialogContent className="max-w-md">
                     <DialogHeader>
                       <DialogTitle className="text-center">
-                        <div className={`${parceiro.id === 1 ? 'w-56 h-56' : 'w-40 h-40'} mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-4`}>
+                        <div className="w-48 h-48 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center p-4">
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
