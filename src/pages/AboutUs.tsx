@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import ScrollAnimation from "@/components/ScrollAnimation";
 import { useNavigate } from "react-router-dom";
 import teamImage from "@/assets/team-collaboration.jpg";
+import ecosystemVideo from "@/assets/ecosystem-video.mp4";
 import missionVisionImage from "@/assets/values-mission-new.jpg";
 
 const AboutUs = () => {
@@ -252,14 +253,16 @@ const AboutUs = () => {
             <ScrollAnimation animationType="slide-in-left">
               <div className="relative">
                 <div className="relative rounded-3xl overflow-hidden shadow-lg bg-white">
-                  <img
-                    src={teamImage}
-                    alt="Ecossistema de especialistas"
+                  <video
+                    src={ecosystemVideo}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
                     className="w-full h-auto object-cover"
-                  />
-                </div>
-                <div className="absolute -bottom-4 -left-4 w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
-                  <Users2 className="h-6 w-6 text-white" />
+                  >
+                    Seu navegador não suporta vídeos.
+                  </video>
                 </div>
               </div>
             </ScrollAnimation>
