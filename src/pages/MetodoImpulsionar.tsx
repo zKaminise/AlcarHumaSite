@@ -80,7 +80,7 @@ const MetodoImpulsionar = () => {
             {benefits.map((benefit, index) => (
               <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
                 <Card className="text-center card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
-                  <CardContent className="p-6">
+                  <CardContent className="p-6 flex flex-col items-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg">
                       <benefit.icon className="h-8 w-8 text-white" />
                     </div>
