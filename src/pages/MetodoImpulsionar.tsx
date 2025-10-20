@@ -57,8 +57,8 @@ const MetodoImpulsionar = () => {
       <Header />
       
       {/* Hero Section */}
-      <main className="pt-24 pb-12">
-        <div className="container mx-auto px-4">
+      <main className="pt-28 md:pt-24 pb-10 md:pb-12">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <ScrollAnimation>
               <h1 className="title-hero text-gradient mb-8">
@@ -67,7 +67,7 @@ const MetodoImpulsionar = () => {
             </ScrollAnimation>
 
             <ScrollAnimation delay={200}>
-              <p className="text-lg md:text-xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
+              <p className="text-base md:text-lg lg:text-xl text-muted-foreground mb-8 md:mb-10 lg:mb-12 leading-relaxed max-w-3xl mx-auto px-4">
                 Cansado de sentir que sua carreira está estagnada? Precisa se preparar para assumir uma posição de liderança? Quer melhorar seus resultados? Nossa abordagem guia um Plano de Desenvolvimento Individual (PDI), que transforma potencial em liderança. Mapeamos suas competências, definimos metas claras e criamos um plano de ação para você alcançar o próximo nível. O nosso propósito é impulsionar o seu!
               </p>
             </ScrollAnimation>
@@ -75,19 +75,19 @@ const MetodoImpulsionar = () => {
         </div>
 
         {/* Benefits Section */}
-        <div className="container mx-auto px-4 mt-16">
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-14 lg:mt-16">
+          <div className="grid sm:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto">
             {benefits.map((benefit, index) => (
               <ScrollAnimation key={benefit.title} delay={300 + index * 100}>
                 <Card className="text-center card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300">
-                  <CardContent className="p-6 flex flex-col items-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                      <benefit.icon className="h-8 w-8 text-white" />
+                  <CardContent className="p-4 md:p-6 flex flex-col items-center">
+                    <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mb-4 md:mb-6 shadow-lg">
+                      <benefit.icon className="h-7 w-7 md:h-8 md:w-8 text-white" />
                     </div>
-                    <h1 className="text-xl font-semibold text-card-dark-foreground mb-4">
+                    <h1 className="text-lg md:text-xl font-semibold text-card-dark-foreground mb-3 md:mb-4">
                       {benefit.title}
                     </h1>
-                    <p className="text-card-dark-foreground-muted leading-relaxed">
+                    <p className="text-sm md:text-base text-card-dark-foreground-muted leading-relaxed">
                       {benefit.description}
                     </p>
                   </CardContent>
@@ -98,20 +98,20 @@ const MetodoImpulsionar = () => {
         </div>
 
         {/* How It Works Section */}
-        <div className="container mx-auto px-4 mt-24">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-16 md:mt-20 lg:mt-24">
           <ScrollAnimation>
-            <h2 className="title-section text-center mb-4">
+            <h2 className="title-section text-center mb-3 md:mb-4">
               Como funciona o <span className="text-gradient">Programa Impulsionar</span>
             </h2>
           </ScrollAnimation>
           
           <ScrollAnimation delay={200}>
-            <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+            <p className="text-center text-sm md:text-base text-muted-foreground mb-10 md:mb-12 lg:mb-16 max-w-2xl mx-auto px-4">
               Uma jornada estruturada em 4 etapas para transformar sua carreira
             </p>
           </ScrollAnimation>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center max-w-6xl mx-auto">
             {/* Image */}
             <ScrollAnimation delay={300}>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -124,20 +124,20 @@ const MetodoImpulsionar = () => {
             </ScrollAnimation>
 
             {/* Steps */}
-            <div className="space-y-6">
+            <div className="space-y-4 md:space-y-6">
               {steps.map((step, index) => (
                 <ScrollAnimation key={step.number} delay={400 + index * 100}>
-                  <div className="flex gap-4">
+                  <div className="flex gap-3 md:gap-4">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
-                        <span className="text-white font-bold">{step.number}</span>
+                      <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                        <span className="text-white font-bold text-sm md:text-base">{step.number}</span>
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-foreground mb-2">
+                      <h3 className="text-lg md:text-xl font-semibold text-foreground mb-1.5 md:mb-2">
                         {step.title}
                       </h3>
-                      <p className="text-muted-foreground leading-relaxed">
+                      <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
                         {step.description}
                       </p>
                     </div>
@@ -150,12 +150,12 @@ const MetodoImpulsionar = () => {
 
 
         {/* CTA Section */}
-        <div className="container mx-auto px-4 mt-20">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-16 lg:mt-20">
           <ScrollAnimation delay={600}>
             <div className="text-center">
               <Button 
                 size="lg"
-                className="btn-hero text-lg px-8 py-4 h-auto"
+                className="btn-hero text-base md:text-lg px-6 md:px-8 py-3 md:py-4 h-auto"
                 onClick={() => setModalOpen(true)}
               >
                 Quero Impulsionar Minha Carreira

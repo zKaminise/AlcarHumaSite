@@ -31,14 +31,14 @@ const Hero = () => {
   }, [api]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 md:pt-24">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-muted/30 to-auxiliary/20" />
       
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-center">
           {/* Content */}
-          <div className="text-center lg:text-left space-y-8">
+          <div className="text-center lg:text-left space-y-6 md:space-y-8">
             <ScrollAnimation animationType="fade-in-scale" duration={1000}>
               <h1 className="title-hero">
                 <span className="text-gradient">Transformar pessoas.</span>
@@ -55,15 +55,15 @@ const Hero = () => {
             </ScrollAnimation>
 
             <ScrollAnimation animationType="slide-in-up" delay={400} duration={1000}>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button className="btn-hero group" onClick={() => {
+              <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
+                <Button className="btn-hero group text-sm sm:text-base" onClick={() => {
                   navigate("/metodo-impulsionar");
                   setTimeout(() => window.scrollTo(0, 0), 100);
                 }}>
                   Descubra o Programa Impulsionar
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                  <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform duration-300" />
                 </Button>
-                <Button className="btn-hero-secondary group" onClick={() => {
+                <Button className="btn-hero-secondary group text-sm sm:text-base" onClick={() => {
                   navigate("/solucoes");
                   setTimeout(() => window.scrollTo(0, 0), 100);
                 }}>

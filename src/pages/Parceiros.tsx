@@ -46,13 +46,13 @@ const Parceiros = () => {
       <Header />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-4 px-4 bg-gradient-to-br from-background via-background to-muted/5">
+      <section className="pt-28 md:pt-24 pb-3 md:pb-4 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-background to-muted/5">
         <div className="max-w-6xl mx-auto text-center">
           <ScrollAnimation>
             <h1 className="title-hero text-foreground mb-6">
               <span className="text-gradient">Nosso Ecossistema de Especialistas</span>
             </h1>
-            <p className="subtitle-main text-muted-foreground mb-8 max-w-4xl mx-auto">
+            <p className="subtitle-main text-muted-foreground mb-6 md:mb-8 max-w-4xl mx-auto px-4">
               Acreditamos no poder da colaboração. Unimos os melhores talentos de diversas áreas 
               para entregar a solução mais completa e precisa para o seu desafio.
             </p>
@@ -61,12 +61,12 @@ const Parceiros = () => {
       </section>
 
       {/* Texto Introdutório */}
-      <section className="pt-4 pb-10 px-4 bg-gradient-to-br from-muted/5 to-background">
+      <section className="pt-3 md:pt-4 pb-8 md:pb-10 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-4xl mx-auto">
           <ScrollAnimation>
             <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 max-w-4xl mx-auto">
-              <CardContent className="p-8">
-                <p className="text-lg text-card-dark-foreground-muted leading-relaxed mb-6">
+              <CardContent className="p-6 md:p-8">
+                <p className="text-sm md:text-base lg:text-lg text-card-dark-foreground-muted leading-relaxed mb-4 md:mb-6">
                   Em um mundo de desafios empresariais cada vez mais complexos e multifacetados, 
                   sabemos que nenhuma empresa, por mais competente que seja, detém todas as respostas. 
                   Na Alçar Humà, valorizamos a inteligência coletiva e a expertise complementar. 
@@ -74,7 +74,7 @@ const Parceiros = () => {
                   e empresas renomadas em suas áreas de atuação – que ampliam a nossa capacidade de 
                   entregar soluções integradas e de alta performance.
                 </p>
-                <p className="text-lg text-card-dark-foreground-muted leading-relaxed">
+                <p className="text-sm md:text-base lg:text-lg text-card-dark-foreground-muted leading-relaxed">
                   Quando você escolhe a Alçar Humà, não acessa apenas o nosso know-how, mas uma rede 
                   cuidadosamente curada de talentos prontos para alavancar seu negócio.
                 </p>
@@ -85,17 +85,17 @@ const Parceiros = () => {
       </section>
 
       {/* Galeria de Especialistas */}
-      <section className="py-12 px-4 bg-gradient-to-br from-background to-muted/20">
+      <section className="py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background to-muted/20">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
-            <div className="text-center mb-16">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Users className="h-8 w-8 text-white" />
+            <div className="text-center mb-10 md:mb-12 lg:mb-16">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                <Users className="h-7 w-7 md:h-8 md:w-8 text-white" />
               </div>
               <h1 className="title-section text-foreground mb-6">
                 Nossos Parceiros
               </h1>
-              <p className="subtitle-main text-muted-foreground max-w-3xl mx-auto">
+              <p className="subtitle-main text-muted-foreground max-w-3xl mx-auto px-4">
                 Conheça os profissionais que compõem nossa rede de excelência.
               </p>
             </div>
@@ -107,18 +107,18 @@ const Parceiros = () => {
                 <Dialog>
                   <DialogTrigger asChild>
                     <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30 hover:border-primary/40 transition-all duration-300 cursor-pointer group h-full">
-                      <CardContent className="p-6 text-center h-full flex flex-col">
-                        <div className="w-40 h-40 mx-auto mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2">
+                      <CardContent className="p-4 md:p-6 text-center h-full flex flex-col">
+                        <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-3 md:mb-4 bg-white rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-300 p-2">
                           <img 
                             src={parceiro.logo} 
                             alt={`Logo ${parceiro.nome}`}
                             className="w-full h-full object-contain"
                           />
                         </div>
-                        <h1 className="text-xl font-semibold text-card-dark-foreground mb-2">
+                        <h1 className="text-lg md:text-xl font-semibold text-card-dark-foreground mb-1.5 md:mb-2">
                           {parceiro.nome}
                         </h1>
-                        <p className="text-card-dark-foreground font-medium mb-3">
+                        <p className="text-sm md:text-base text-card-dark-foreground font-medium mb-2 md:mb-3">
                           {parceiro.especialidade}
                         </p>
                         <p className="text-card-dark-foreground-muted text-sm leading-relaxed flex-1">
@@ -129,13 +129,13 @@ const Parceiros = () => {
                             href={parceiro.link} 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300"
+                            className="mt-3 md:mt-4 bg-white text-primary text-xs md:text-sm font-medium px-3 py-1.5 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300"
                             onClick={(e) => e.stopPropagation()}
                           >
                             Saiba mais →
                           </a>
                         ) : (
-                          <div className="mt-4 bg-white text-primary text-sm font-medium px-3 py-1 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300">
+                          <div className="mt-3 md:mt-4 bg-white text-primary text-xs md:text-sm font-medium px-3 py-1.5 rounded-md inline-block group-hover:bg-white/90 transition-colors duration-300">
                             Saiba mais →
                           </div>
                         )}
@@ -184,12 +184,12 @@ const Parceiros = () => {
       </section>
 
       {/* Como Funciona Nossa Parceria */}
-      <section className="py-12 px-4 bg-gradient-to-br from-muted/5 to-background">
+      <section className="py-10 md:py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-muted/5 to-background">
         <div className="max-w-6xl mx-auto">
           <ScrollAnimation>
-            <div className="text-center mb-12">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
-                <Network className="h-8 w-8 text-white" />
+            <div className="text-center mb-8 md:mb-10 lg:mb-12">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 md:mb-6 shadow-lg">
+                <Network className="h-7 w-7 md:h-8 md:w-8 text-white" />
               </div>
               <h1 className="title-section text-foreground mb-8">
                 Inteligência Coletiva a Serviço do Seu Negócio
@@ -200,8 +200,8 @@ const Parceiros = () => {
           <ScrollAnimation delay={200}>
             <div className="max-w-4xl mx-auto">
               <Card className="card-floating card-glow bg-card-dark backdrop-blur-sm border-border/30">
-                <CardContent className="p-8">
-                  <p className="text-lg text-card-dark-foreground-muted leading-relaxed">
+                <CardContent className="p-6 md:p-8">
+                  <p className="text-sm md:text-base lg:text-lg text-card-dark-foreground-muted leading-relaxed">
                     Entendemos que gerenciar múltiplos fornecedores e especialistas pode ser um desafio para qualquer empresa, especialmente para pequenas e médias. Por isso, na Alçar Humà, simplificamos esse processo para você. Nosso papel é garantir que todas as pontas se conectem, que a comunicação seja fluida e que o resultado final seja uma solução coesa, alinhada aos seus objetivos e entregue com a excelência que sua empresa merece. Sua jornada conosco é clara, eficiente e focada em resultados.
                   </p>
                 </CardContent>
@@ -210,10 +210,10 @@ const Parceiros = () => {
           </ScrollAnimation>
 
           <ScrollAnimation delay={400}>
-            <div className="text-center mt-12">
+            <div className="text-center mt-8 md:mt-10 lg:mt-12">
               <Button 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 text-lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-6 md:px-8 py-2.5 md:py-3 text-base md:text-lg"
                 onClick={() => {
                   navigate('/fale-conosco');
                   setTimeout(() => window.scrollTo(0, 0), 100);

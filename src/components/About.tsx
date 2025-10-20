@@ -9,11 +9,11 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="sobre" className="py-12 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="sobre" className="py-10 md:py-12 lg:py-16 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <ScrollAnimation animationType="fade-in-up">
               <h1 className="title-section text-foreground">
                 Mais que uma consultoria, uma <span className="text-gradient">parceira estratégica</span> para o seu
@@ -30,42 +30,44 @@ const About = () => {
 
             {/* Stats/Features */}
             <ScrollAnimation animationType="fade-in-up" delay={300}>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
-                <div className="text-center p-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
-                    <Users className="h-7 w-7 text-white" />
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 my-6 md:my-8">
+                <div className="text-center p-3 md:p-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-2 md:mb-3 shadow-lg">
+                    <Users className="h-6 w-6 md:h-7 md:w-7 text-white" />
                   </div>
-                  <h1 className="font-semibold text-foreground">Pessoas</h1>
-                  <p className="text-sm text-muted-foreground">Valorizadas</p>
+                  <h1 className="text-base md:text-lg font-semibold text-foreground">Pessoas</h1>
+                  <p className="text-xs md:text-sm text-muted-foreground">Valorizadas</p>
                 </div>
-                <div className="text-center p-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
-                    <Target className="h-7 w-7 text-white" />
+                <div className="text-center p-3 md:p-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-2 md:mb-3 shadow-lg">
+                    <Target className="h-6 w-6 md:h-7 md:w-7 text-white" />
                   </div>
-                  <h1 className="font-semibold text-foreground">Processos</h1>
-                  <p className="text-sm text-muted-foreground">Inteligentes</p>
+                  <h1 className="text-base md:text-lg font-semibold text-foreground">Processos</h1>
+                  <p className="text-xs md:text-sm text-muted-foreground">Inteligentes</p>
                 </div>
-                <div className="text-center p-4">
-                  <div className="w-14 h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-lg">
-                    <Award className="h-7 w-7 text-white" />
+                <div className="text-center p-3 md:p-4">
+                  <div className="w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-2 md:mb-3 shadow-lg">
+                    <Award className="h-6 w-6 md:h-7 md:w-7 text-white" />
                   </div>
-                  <h1 className="font-semibold text-foreground">Resultados</h1>
-                  <p className="text-sm text-muted-foreground">Duradouros</p>
+                  <h1 className="text-base md:text-lg font-semibold text-foreground">Resultados</h1>
+                  <p className="text-xs md:text-sm text-muted-foreground">Duradouros</p>
                 </div>
               </div>
             </ScrollAnimation>
 
             <ScrollAnimation animationType="fade-in-up" delay={400}>
-              <Button
-                className="btn-hero group"
-                onClick={() => {
-                  navigate("/sobre-nos");
-                  setTimeout(() => window.scrollTo(0, 0), 100);
-                }}
-              >
-                Nosso Propósito
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
-              </Button>
+              <div className="flex justify-center lg:justify-start">
+                <Button
+                  className="btn-hero group"
+                  onClick={() => {
+                    navigate("/sobre-nos");
+                    setTimeout(() => window.scrollTo(0, 0), 100);
+                  }}
+                >
+                  Nosso Propósito
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                </Button>
+              </div>
             </ScrollAnimation>
           </div>
 

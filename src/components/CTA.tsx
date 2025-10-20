@@ -34,15 +34,15 @@ const CTA = () => {
             <div className="flex justify-center">
               <Button 
                 size="lg"
-                className="bg-white text-primary hover:bg-white/90 text-xl px-12 py-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
+                className="bg-white text-primary hover:bg-white/90 text-base md:text-lg px-8 md:px-10 py-6 md:py-7 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
                 onClick={() => {
                   navigate("/fale-conosco");
                   setTimeout(() => window.scrollTo(0, 0), 100);
                 }}
               >
-                <Calendar className="mr-4 h-7 w-7" />
+                <Calendar className="mr-3 h-5 w-5 md:h-6 md:w-6" />
                 Fale com um Especialista
-                <ArrowRight className="ml-4 h-6 w-6 group-hover:translate-x-1 transition-transform duration-300" />
+                <ArrowRight className="ml-3 h-5 w-5 md:h-6 md:w-6 group-hover:translate-x-1 transition-transform duration-300" />
               </Button>
             </div>
           </ScrollAnimation>

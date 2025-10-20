@@ -3,25 +3,25 @@ import logoFooter from "@/assets/logo-footer-new.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-primary-dark text-primary-foreground py-12">
-      <div className="container mx-auto px-4">
+    <footer className="bg-primary-dark text-primary-foreground py-10 md:py-12">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
-        <div className="grid md:grid-cols-3 gap-12 items-start">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-10 lg:gap-12 items-start">
           
           {/* Company Info & Logo */}
-          <div className="space-y-4">
+          <div className="space-y-3 md:space-y-4 sm:col-span-2 md:col-span-1">
             <img 
               src={logoFooter} 
               alt="Alçar Humà Gestão e Pessoas" 
-              className="h-24 w-auto mb-4"
+              className="h-20 md:h-24 w-auto mb-3 md:mb-4"
             />
-            <h3 className="text-lg font-bold">Alçar Humà Gestão e Pessoas Ltda.</h3>
-            <p className="text-sm text-primary-foreground/80 italic leading-relaxed">
+            <h3 className="text-base md:text-lg font-bold">Alçar Humà Gestão e Pessoas Ltda.</h3>
+            <p className="text-xs md:text-sm text-primary-foreground/80 italic leading-relaxed">
               Transformar pessoas. Fortalecer empresas.
             </p>
             
             {/* Social Links */}
-            <div className="flex space-x-4 pt-2">
+            <div className="flex space-x-3 md:space-x-4 pt-1 md:pt-2">
               <a 
                 href="https://www.linkedin.com/company/alçar-humà-gestão-e-pessoas/"
                 target="_blank"
@@ -29,7 +29,7 @@ const Footer = () => {
                 className="text-primary-foreground/70 hover:text-auxiliary transition-all duration-300 hover:scale-110"
                 aria-label="LinkedIn"
               >
-                <Linkedin className="h-6 w-6" />
+                <Linkedin className="h-5 w-5 md:h-6 md:w-6" />
               </a>
               <a 
                 href="https://www.instagram.com/alcarhumagp?igsh=MXJqMWduMHM1dmh3cg%3D%3D&utm_source=qr"
@@ -38,15 +38,15 @@ const Footer = () => {
                 className="text-primary-foreground/70 hover:text-auxiliary transition-all duration-300 hover:scale-110"
                 aria-label="Instagram"
               >
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-5 w-5 md:h-6 md:w-6" />
               </a>
             </div>
           </div>
 
           {/* Navigation Links */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-auxiliary">Navegação</h4>
-            <ul className="space-y-2.5">
+            <h4 className="text-sm md:text-base font-semibold mb-3 md:mb-4 text-auxiliary">Navegação</h4>
+            <ul className="space-y-2 md:space-y-2.5">
               <li><a href="/sobre-nos" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Sobre Nós</a></li>
               <li><a href="/solucoes" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Soluções</a></li>
               <li><a href="/metodo-impulsionar" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">Programa Impulsionar</a></li>
@@ -59,32 +59,32 @@ const Footer = () => {
 
           {/* Contact Information */}
           <div>
-            <h4 className="text-base font-semibold mb-4 text-auxiliary">Contato</h4>
-            <div className="space-y-3">
-              <div className="flex items-start space-x-3">
-                <Phone className="h-4 w-4 text-auxiliary flex-shrink-0 mt-1" />
+            <h4 className="text-sm md:text-base font-semibold mb-3 md:mb-4 text-auxiliary">Contato</h4>
+            <div className="space-y-2 md:space-y-3">
+              <div className="flex items-start space-x-2 md:space-x-3">
+                <Phone className="h-3.5 w-3.5 md:h-4 md:w-4 text-auxiliary flex-shrink-0 mt-0.5 md:mt-1" />
                 <a href="tel:+5567996442404" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors">
                   (67) 99644 2404
                 </a>
               </div>
-              <div className="flex items-start space-x-3">
-                <Mail className="h-4 w-4 text-auxiliary flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-2 md:space-x-3">
+                <Mail className="h-3.5 w-3.5 md:h-4 md:w-4 text-auxiliary flex-shrink-0 mt-0.5 md:mt-1" />
                 <a href="mailto:contato@alcarhumacom.br" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors break-all">
                   contato@alcarhumacom.br
                 </a>
               </div>
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-4 w-4 text-auxiliary flex-shrink-0 mt-1" />
+              <div className="flex items-start space-x-2 md:space-x-3">
+                <MapPin className="h-3.5 w-3.5 md:h-4 md:w-4 text-auxiliary flex-shrink-0 mt-0.5 md:mt-1" />
                 <span className="text-sm text-primary-foreground/80">
                   Av. Afonso Pena, 5723 - 15º - 7º andar - Royal Park, Campo Grande - MS, 79040-010
                 </span>
               </div>
               
               {/* LGPD Contact */}
-              <div className="pt-4 border-t border-primary-foreground/10">
-                <p className="text-xs text-primary-foreground/60 mb-2">Encarregado de Dados (LGPD)</p>
-                <div className="flex items-start space-x-3">
-                  <Mail className="h-4 w-4 text-auxiliary flex-shrink-0 mt-0.5" />
+              <div className="pt-3 md:pt-4 border-t border-primary-foreground/10">
+                <p className="text-xs text-primary-foreground/60 mb-1.5 md:mb-2">Encarregado de Dados (LGPD)</p>
+                <div className="flex items-start space-x-2 md:space-x-3">
+                  <Mail className="h-3.5 w-3.5 md:h-4 md:w-4 text-auxiliary flex-shrink-0 mt-0.5" />
                   <a href="mailto:lgpd@alcarhuma.com.br" className="text-sm text-primary-foreground/80 hover:text-auxiliary transition-colors break-all">
                     lgpd@alcarhuma.com.br
                   </a>
@@ -95,8 +95,8 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-primary-foreground/20 mt-10 pt-6 text-center">
-          <p className="text-primary-foreground/60 text-sm">
+        <div className="border-t border-primary-foreground/20 mt-8 md:mt-10 pt-4 md:pt-6 text-center">
+          <p className="text-primary-foreground/60 text-xs md:text-sm">
             © 2024 Alçar Humà. Todos os direitos reservados. | Desenvolvido com excelência para transformar negócios.
           </p>
         </div>

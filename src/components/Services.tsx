@@ -51,10 +51,10 @@ const Services = () => {
   ];
 
   return (
-    <section id="solucoes" className="py-12">
-      <div className="container mx-auto px-4">
+    <section id="solucoes" className="py-10 md:py-12 lg:py-16">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10 md:mb-12 lg:mb-16">
           <ScrollAnimation animationType="fade-in-up">
             <h1 className="title-section text-foreground mb-6">
               Soluções Estratégicas para um{" "}
@@ -63,21 +63,21 @@ const Services = () => {
           </ScrollAnimation>
           
           <ScrollAnimation animationType="fade-in-up" delay={200}>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed px-4">
               Navegue por nossos pilares de atuação e encontre a solução ideal para os desafios da sua empresa.
             </p>
           </ScrollAnimation>
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {services.map((service, index) => (
             <div key={service.title} className="relative h-full flex flex-col">
               {/* Icon */}
               <ScrollAnimation animationType="fade-in-up" delay={index * 100}>
-                <div className="flex items-center justify-center mb-6">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
-                    <service.icon className="h-8 w-8 text-white" />
+                <div className="flex items-center justify-center mb-4 md:mb-6">
+                  <div className="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center shadow-lg">
+                    <service.icon className="h-7 w-7 md:h-8 md:w-8 text-white" />
                   </div>
                 </div>
               </ScrollAnimation>

@@ -8,9 +8,9 @@ const Ecosystem = () => {
   const navigate = useNavigate();
 
   return (
-    <section id="ecossistema" className="py-12 bg-gradient-to-br from-auxiliary/20 to-muted/40">
-      <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section id="ecossistema" className="py-10 md:py-12 lg:py-16 bg-gradient-to-br from-auxiliary/20 to-muted/40">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid lg:grid-cols-2 gap-10 md:gap-12 lg:gap-16 items-center">
           {/* Image */}
           <ScrollAnimation animationType="slide-in-left">
             <div className="relative">
@@ -26,7 +26,7 @@ const Ecosystem = () => {
           </ScrollAnimation>
 
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8 order-first lg:order-last">
             <ScrollAnimation animationType="fade-in-up">
               <h1 className="title-section text-foreground">
                 <span className="text-gradient">Inteligência Coletiva</span>{" "}
@@ -44,34 +44,34 @@ const Ecosystem = () => {
 
             {/* Features */}
             <ScrollAnimation animationType="fade-in-up" delay={300}>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
-                    <Lightbulb className="h-5 w-5 text-white" />
+              <div className="space-y-4 md:space-y-6">
+                <div className="flex items-start space-x-3 md:space-x-4">
+                  <div className="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
+                    <Lightbulb className="h-4 w-4 md:h-5 md:w-5 text-white" />
                   </div>
                   <div>
-                    <h1 className="font-semibold text-foreground mb-2">Soluções Personalizadas</h1>
-                    <p className="text-muted-foreground">Cada desafio é único e merece uma abordagem específica e inteligente.</p>
+                    <h1 className="text-base md:text-lg font-semibold text-foreground mb-1 md:mb-2">Soluções Personalizadas</h1>
+                    <p className="text-sm md:text-base text-muted-foreground">Cada desafio é único e merece uma abordagem específica e inteligente.</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
-                    <Network className="h-5 w-5 text-white" />
+                <div className="flex items-start space-x-3 md:space-x-4">
+                  <div className="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
+                    <Network className="h-4 w-4 md:h-5 md:w-5 text-white" />
                   </div>
                   <div>
-                    <h1 className="font-semibold text-foreground mb-2">Rede de Especialistas</h1>
-                    <p className="text-muted-foreground">Acesso a profissionais de elite em diversas áreas de conhecimento.</p>
+                    <h1 className="text-base md:text-lg font-semibold text-foreground mb-1 md:mb-2">Rede de Especialistas</h1>
+                    <p className="text-sm md:text-base text-muted-foreground">Acesso a profissionais de elite em diversas áreas de conhecimento.</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4">
-                  <div className="w-10 h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
-                    <Users2 className="h-5 w-5 text-white" />
+                <div className="flex items-start space-x-3 md:space-x-4">
+                  <div className="w-9 h-9 md:w-10 md:h-10 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center flex-shrink-0 mt-1 shadow-lg">
+                    <Users2 className="h-4 w-4 md:h-5 md:w-5 text-white" />
                   </div>
                   <div>
-                    <h1 className="font-semibold text-foreground mb-2">Múltiplas Perspectivas</h1>
-                    <p className="text-muted-foreground">Análise 360° dos desafios para soluções mais robustas e eficazes.</p>
+                    <h1 className="text-base md:text-lg font-semibold text-foreground mb-1 md:mb-2">Múltiplas Perspectivas</h1>
+                    <p className="text-sm md:text-base text-muted-foreground">Análise 360° dos desafios para soluções mais robustas e eficazes.</p>
                   </div>
                 </div>
               </div>
